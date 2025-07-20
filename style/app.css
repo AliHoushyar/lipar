@@ -1,0 +1,459 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "shabnam", sans-serif;
+    background-color: #f5f4f7;
+    position: relative;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'zeytoon';
+    src: url('../fonts/Zeytoon.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'shabnam';
+    src: url('../fonts/Shabnam-FD.woff2') format('opentype');
+}
+
+.bigBG{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/bg3.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoImg{
+    width: 300px;
+}
+
+.wBtn{
+    width: 250px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 15px;
+    margin-top: 25px;
+    box-shadow: #af894f7d 3.95px 2.95px 2.6px;
+}
+
+.seprator{
+    width: 70%;
+    margin-top: 45px;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.singleSocial img{
+    width: 40px;
+}
+
+/* --------- */
+
+.topContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.topImg{
+    width: 100%;
+    height: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.topImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.mainMenuCountainer{
+    width: 100%;
+    min-height: 437px;
+    top: 230px;
+    position: relative;
+    z-index: 2;
+    background-color: #fffcfc;
+    border-radius: 27px 27px 0 0;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    padding-bottom: 75px;
+}
+
+.menuContainer{
+    width: 100%;
+    min-height: 437px;
+    background-color: #fffcfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+.singleMenuFood{
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    padding: 7px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.singleTop{
+    width: 100%;
+    height: 70%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.foodImg{
+    width: 120px;
+    height:100%;
+    border-radius: 15px;
+}
+
+.foodTitle{
+    width: 62%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+.singleBotton{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foodBtn{
+    width: 120px;
+    height: 30px;
+    margin-left: 7px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #D7D9EB;
+    color: #080e3a;
+}
+
+
+.foodBtn img{
+    width: 12px;
+    height: 12px;
+    margin-top: -2px;
+}
+
+.foodName{
+    font-size: 22px;
+    font-family: 'zeytoon';
+}
+
+.foodDes{
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+.foodPrice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottonMenu{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #f5f4f7;
+    z-index: 4;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bottonMenuSingle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    transition: all 250ms ease-in-out;
+}
+
+.bottonMenuSingle i{
+    font-size: 20px;
+}
+
+.bottonMenuSingle span{
+    font-size: 12px;
+}
+
+.bottonMenuSingle.active{
+    color: #af884f;
+}
+
+.selectorMenu{
+    position: absolute;
+    top:0;
+    right: 123px;
+    width: 100px;
+    height: 3px;
+    background-color: #af884f;
+    border-radius: 2px;
+    transition: all 250ms ease-in-out;
+}
+
+.menuType{
+    max-width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    overflow: scroll;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.singleMenuType{
+    min-width: 120px;
+    height: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #7a7a7a;
+    transition: all 100ms ease-in-out;
+    background-color: transparent;
+}
+
+.singleMenuType.active{
+    border: none;
+    border-bottom: 3px solid #080e3a;
+    color: #080e3a;
+}
+
+#BMBTN3{
+    position: relative;
+}
+
+.cartNum{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #080e3a;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+#cartCount{
+    font-size: 10px;
+}
+
+/* ----------------- */
+
+.topLogoCont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.longLogoBtn{
+    width: 40px;
+    height: 40px;
+    background-color: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.topLongLogo{
+    width: 180px;
+}
+
+.homeBanner{
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+}
+
+.nvdjcnd{
+    width: 100%;
+    height: 100%;
+    background-color: #080e3a;
+    border-radius: 25px;
+}
+
+.nvdjcnd img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.homeCatagories{
+    width: 100%;
+    padding: 15px;
+}
+
+.HCTtxt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HCTtxt a{
+    color: #af884f;
+    font-size: 14px;
+}
+
+.HCMain{
+    max-width: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+.HCSingle{
+    min-width: 120px;
+    height: 150px;
+    border: 1px solid #dddddd;
+    border-radius: 25px;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    gap: 7px;
+}
+
+.HCSingle img{
+    width: 100%;
+}
+
+/* ----------------- */
+
+.cartContainer{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 210px;
+}
+
+.TPrice{
+    width: 100%;
+    height: 140px;
+    position: fixed;
+    bottom: 59px;
+    background-color: #f5f4f7;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    padding: 15px;
+}
+
+.TPTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.singleTPTxt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.STPNum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.TPBTN{
+    width: 100%;
+    height: 40px;
+    background-color: #080e3a;
+    border-radius: 7px;
+    color: #af884f;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.bottonMenu.blank{
+    box-shadow: none;
+}
