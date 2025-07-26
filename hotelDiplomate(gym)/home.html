@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/app.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bottomMenu">
+      <button class="BMenuBtn">
+        <i class="bx bx-diamond"></i>
+        <span>امتیازها</span>
+      </button>
+      <button class="BMenuBtn">
+        <i class="bx bx-wallet"></i>
+        <span>کیف پول</span>
+      </button>
+      <button class="BMenuBtn active">
+        <i class="bx bx-home"></i>
+        <span>خانه</span>
+      </button>
+      <button class="BMenuBtn">
+        <i class="bx bx-user"></i>
+        <span>پروفایل</span>
+      </button>
+      <button class="BMenuBtn">
+        <i class="bx bx-cog"></i>
+        <span>تنظیمات</span>
+      </button>
+    </div>
+    <div id="MaBiCo" class="mainBigContainer">
+      <div class="topMenu">
+        <div class="TMLogoContainer">
+          <img class="topMenuLogo" src="./img/logo-dark.png" alt="" />
+          <div class="TMSep"></div>
+          <span class="TMLoc">خانه</span>
+        </div>
+      </div>
+      <div class="homeContainer">
+        <div class="topSiteBanners">
+          <img class="singleBanner" src="./img/banner1.png" alt="" />
+        </div>
+        <div class="khadamatMa">
+          <div class="khadamatTxt">
+            <span class="khadamatTitle">خدمات ما</span>
+            <div class="khadamatLine"></div>
+          </div>
+        </div>
+        <div class="homeBtnContainer">
+          <div class="WBCRow fadingRow">
+            <button class="WBCSingle">
+              <img src="./img/restaurantHome.png" alt="" />
+            </button>
+            <button class="WBCSingle">
+              <img src="./img/trainHome.png" alt="" />
+            </button>
+          </div>
+          <div class="WBCRow fadingRow">
+            <button class="WBCSingle">
+              <img src="./img/hotelhome.png" alt="" />
+            </button>
+            <button class="WBCSingle">
+              <img src="./img/hallhome.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="khadamatMa dwonDiv">
+          <div class="khadamatTxt">
+            <span class="khadamatTitle">جشنواره ها</span>
+            <div class="khadamatLine"></div>
+          </div>
+        </div>
+        <div class="dwonBanners">
+          <img class="singledownBanner" src="./img/bannerw.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/jquery.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#MaBiCo").css("opacity", "1");
+      $("#MaBiCo").css("top", "0px");
+      $(".fadingRow").css("opacity", "1");
+      $(".fadingRow").css("margin-top", "0px");
+    });
+  </script>
+</html>

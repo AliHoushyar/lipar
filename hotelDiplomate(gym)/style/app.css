@@ -1,0 +1,1767 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'zeytoon';
+    src: url('../fonts/Zeytoon.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'shabnam';
+    src: url('../fonts/Shabnam-FD.woff2') format('opentype');
+}
+
+@font-face {
+    font-family: 'fani';
+    src: url('../fonts/Far.Fanni.ttf') format('opentype');
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "shabnam", sans-serif;
+    background-color: #f5f4f7;
+    position: relative;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bottomMenu{
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.topMenu{
+    width: 100%;
+    height: 56px;
+    background-color: #f5f4f7;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.TMLogoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.TMSep{
+    width: 1px;
+    background-color: #a1a1a1;
+    height: 24px;
+}
+
+.topMenuLogo{
+    width: 24px;
+}
+
+.TMBtn{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.mainBigContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 300ms ease-in-out;
+}
+
+#MaBiCo{
+    opacity: 0;
+}
+
+.BMenuBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    transition: all 250ms ease-in-out;
+}
+
+.BMenuBtn.active{
+    color: #00abe1;
+}
+
+.BMenuBtn i{
+    font-size: 24px;
+}
+
+.BMenuBtn span{
+    font-size: 12px;
+}
+
+/* @ LOGIN @ */
+
+.loginContainer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.loginBack{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.loginLogo{
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    transition: all 500ms ease-in-out;
+}
+
+.loginTexts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: #ffffff;
+    position: absolute;
+    top: 14%;
+    right: 50%;
+    transform: translateX(50%);
+    font-family: 'fani';
+    transition: all 500ms ease-in-out;
+}
+
+.loginTextWel{
+    font-size: 20px;
+    color: #C7EDF9;
+}
+
+.loginTextMain{
+    font-size: 24px;
+}
+
+.loginTextSub{
+    font-size: 18px;
+    color: #ACE5F6;
+}
+
+.loginButtons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    position: absolute;
+    bottom: 15%;
+}
+
+.loginBtn{
+    width: 162px;
+    height: 40px;
+    font-size: 18px;
+    color: #ffffff;
+    border: 2px solid #92DCF3;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.loginForget{
+    font-size: 12px;
+    margin-top: 7px;
+    color: #C7EDF9;
+}
+
+.loginForget span{
+    color: #ffffff;
+}
+
+.loginForm{
+    width: 100%;
+    height: 70vh;
+    border-radius: 25px 25px 0 0;
+    position: absolute;
+    bottom: -70vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    transition: all 500ms ease-in-out;
+}
+
+.loginFormtitle{
+    font-size: 32px;
+    font-family: 'fani';
+    color: #00abe1;
+}
+
+.loginFormSub{
+    color: #a1a1a1;
+}
+
+.loginMainForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.loginMainForm input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #c1e7da;
+    border-radius: 30px;
+    text-align: center;
+    font-family: 'shabnam';
+    font-size: 16px;
+}
+
+.loginMainForm input::placeholder{
+    color: #88A299;
+}
+
+.loginMainForm input:focus{
+    outline: none;
+}
+
+.loginSubBtn{
+    width: 210px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: #00abe1;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 45px;
+}
+
+.loginFormForget{
+    font-size: 12px;
+    color: #00abe1;
+}
+
+.forgetPassForm{
+    width: 100%;
+    height: 70vh;
+    border-radius: 25px 25px 0 0;
+    position: absolute;
+    bottom: -70vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    transition: all 500ms ease-in-out;
+    overflow: scroll;
+    
+}
+
+.forgetPassfirst , .forgetPassSec , .forgetPassThi , .forgetPassFor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.forgetPassTitle{
+    font-size: 32px;
+    font-family: 'fani';
+    color: #00abe1;
+}
+
+.forgetPassDesc{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: #a1a1a1;
+    margin-top: 15px;
+}
+
+.forgetPhoneSingle.lastOne{
+    margin-bottom: 25px;
+}
+
+.forgetPassCodeInp{
+    margin-top: 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.forgetPassCodeInp input{
+    width: 80%;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ececec;
+    font-size: 16px;
+    font-family: 'shabnam';
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.forgetPassCodeInp button{
+    width: 80%;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #00abe1;
+    color: #ffffff;
+    text-align: center;
+}
+
+.forgetPassPhoneInp{
+    margin-top: 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.forgetPassPhoneInp input{
+    width: 80%;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ececec;
+    font-size: 16px;
+    font-family: 'shabnam';
+    text-align: center;
+}
+
+.forgetPassPhoneInp button{
+    width: 80%;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #00abe1;
+    color: #ffffff;
+    text-align: center;
+}
+
+.forgetPassFor img{
+    margin-top: 65px;
+    width: 70px;
+}
+
+.backToLog{
+    width: 80%;
+    height: 40px;
+    background-color: #00abe1;
+    color: #ffffff;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.forgetPassMain{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all 500ms ease;
+}
+
+/* @ PROFILE @ */
+
+.profTop{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    margin-top: 65px;
+}
+
+.PTImage{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.PTImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.PTIShade{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #00abe1;
+    background: linear-gradient(315deg,#00abe1 0%, rgba(28, 184, 183, 0) 50%);
+}
+
+.PTIEdit{
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.PTTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #a1a1a1;
+    font-size: 14px;
+}
+
+.PTTName{
+    font-size: 16px;
+    font-weight: bold;
+    color: #686767;
+}
+
+.wave{
+    width: 100%;
+    position: absolute;
+    bottom: -58%;
+}
+
+.profOpt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    padding-top: 95px;
+    gap: 12px;
+}
+
+.POSingle{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    color: #686767;
+    background-color: transparent;
+    height: 40px;
+}
+
+.POSingle i{
+    font-size: 20px;
+}
+
+.POSingle span{
+    margin-right: 40px;
+}
+
+/* @ INVITE @ */
+
+
+.invContaoner , .walletContainer , .pointContainer 
+, .depositContainer , .convertContainer , .homeContainer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+}
+
+.walletContainer , .pointContainer , .homeContainer{
+    padding-top: 50px;
+}
+
+.ICImg{
+    width: 320px;
+    top: 0;
+}
+
+.walletImg{
+    position: absolute;
+    width: 340px;
+    z-index: -1;
+    top: 0;
+}
+
+.ICTxt{
+    width: 100%;
+    padding: 15px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    color: #a1a1a1;
+    gap: 7px;
+}
+
+.ICTTitle{
+    font-size: 20px;
+    color: #303030;
+}
+
+.ICBCode{
+    font-size: 22px;
+    border: 1px solid #a1a1a1;
+    color: #686767;
+    border-radius: 7px;
+    padding: 7px;
+    width: 330px;
+    text-align: center;
+}
+
+.ICBtn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.ICBSend{
+    width: 330px;
+    height: 45px;
+    border-radius: 7px;
+    color: #ffffff;
+    background-color: #00abe1;
+}
+
+/* @ WALLET @ */
+
+.topWalCont{
+    position: relative;
+    width: 100%;
+    height: 204px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+}
+
+.WCTitle{
+    font-size: 20px;
+    font-family: 'zeytoon';
+    color: #ffffff;
+    text-shadow: 2px 2px #303030;
+}
+
+.WCSub{
+    font-size: 44px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    position: absolute;
+    right: 66px;
+}
+
+.WCDate{
+    text-shadow: 2px 2px #303030;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.walletBtnContainer{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.WBCRow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.WBCSingle{
+    width: 160px;
+    height: 160px;
+    border-radius: 25px;
+}
+
+.WBCSingle2{
+    width: 160px;
+    height: 80px;
+    border-radius: 25px;
+}
+
+.WBCSingle img{
+    width: 100%;
+}
+
+.WBCSingle2 img{
+    width: 100%;
+}
+
+
+/* @ POINTS @ */
+
+.pointsTypeImg{
+    width: 125px;
+    position: absolute;
+    left: 45px;
+}
+
+.PTTxt2{
+    font-size: 36px;
+    font-family: 'fani';
+    position: absolute;
+    top: 71px;
+    right: 18%;
+    color: #ffffff;
+}
+
+.pointProgress{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 12px;
+}
+
+.PPText{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.PPTPoint{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.PPTPercent{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.PPTBar{
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #e3e4e7;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.PPTMainBar{
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.pointUse{
+    width: 100%;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PUTitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 18px;
+}
+
+.PUOptions{
+    max-width: 100%;
+    overflow-x: scroll;
+    gap: 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.PUOSingle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-width: 80px;
+}
+
+.PUOSImg{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e4e7;
+    border-radius: 15px;
+}
+
+.PUOSImg img{
+    width: 100%;
+}
+
+/* @ BANK STATEMENT @ */
+
+.chartContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top:7px ;
+    height: 215px;
+}
+
+.card {
+    position: absolute;
+    height: 192px;
+    width: 340px;
+    background: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #00abe1;
+}
+
+.card .statistic {
+    position: relative;
+    height: 162px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.line1Num , .line2Num ,.line3Num ,.line4Num ,.line5Num{
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    color: #E3F6FC;
+}
+
+.line1Num{
+    top: 13px;
+}
+
+.line2Num{
+    top: 48px;
+}
+
+.line3Num{
+    top: 83px;
+}
+
+.line4Num{
+    top: 118px;
+}
+
+.line5Num{
+    top: 153px;
+}
+
+.card .statistic .line-1 {
+    position: absolute;
+    top: 20px;
+    width: 84%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #42c2db;
+}
+
+.card .statistic .line-2 {
+    position: absolute;
+    top: 55px;
+    width: 84%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #42c2db;
+}
+
+.card .statistic .line-3 {
+    position: absolute;
+    top: 90px;
+    width: 84%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #42c2db;
+}
+
+.card .statistic .line-4 {
+    position: absolute;
+    top: 125px;
+    width: 84%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #42c2db;
+}
+
+.card .statistic .line-5 {
+    position: absolute;
+    top: 160px;
+    width: 84%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #42c2db;
+}
+
+.card .statistic .data svg {
+    position: absolute;
+    top: 20px;
+    left: 49px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: 2.5s dash 0.5s linear forwards;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.card .statistic .data .tooltip {
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translate3d(-50%, 10px, 0);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 11px;
+    color: #fff;
+    padding: 8px 6px;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s;
+}
+
+.card .statistic .data .tooltip:after {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 6px;
+    width: 6px;
+    left: 50%;
+    margin-left: -3px;
+    top: -3px;
+    transform: rotate(45deg);
+}
+
+.card .statistic .data [class^="point-"] {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.card .statistic .data [class^="point-"]:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translate3d(-50%, 0, 0);
+}
+
+.card .statistic .data polyline {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke: #E3F6FC;
+}
+
+.card .statistic .data.red [class^="point-"],
+.card .statistic .data.red .tooltip,
+.card .statistic .data.red .tooltip:after {
+    background: #E3F6FC;
+}
+
+.card .statistic .data.red .point-1 {
+    left: 55px;
+    top: 38px;
+}
+
+.card .statistic .data.red .point-2 {
+    left: 95px;
+    top: 96px;
+}
+
+.card .statistic .data.red .point-3 {
+    left: 132px;
+    top: 128px;
+}
+
+.card .statistic .data.red .point-4 {
+    left: 170px;
+    top: 28px;
+}
+
+.card .statistic .data.red .point-5 {
+    left: 210px;
+    top: 67px;
+}
+
+.card .statistic .data.red .point-6 {
+    left: 248px;
+    top: 65px;
+}
+
+.card .statistic .data.red .point-7 {
+    left: 287px;
+    top: 36px;
+}
+
+.card .days {
+    width: 271px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.card .days .day {
+    display: block;
+    float: left;
+    width: calc(100% / 7);
+    font-size: 9px;
+    color: #E3F6FC;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.resentContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.RSTitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px;
+}
+
+.RSTitle a{
+    font-size: 12px;
+    color: #00abe1;
+}
+
+.RSTransactions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 0 25px;
+    gap: 7px;
+}
+
+.RSTrSingle{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.RSTrRight{
+    display: flex;
+    align-items: center;
+}
+
+.RSTrSingle img{
+    height: 50px;
+    border-radius: 15px;
+}
+
+.RSTrTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    padding-right: 15px;
+}
+
+.RSTrTTitle{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.RSTrTDate{
+    font-size: 12px;
+    color: #a1a1a1;
+}
+
+.RSTrPrice{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.RSTrPVal{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.RSTrPCor{
+    font-size: 12px;
+    margin-right: 2px;
+    margin-top: 5px;
+}
+
+.RSTrPSign{
+    font-size: 18px;
+    margin-right: 2px;
+}
+
+.RSTrMan{
+    color: #dd1f21;
+}
+
+.RSTrMos{
+    color: #00abe1;
+}
+
+.RSBtnCont{
+    width: 100%;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.RSBSingle{
+    width: 160px;
+    height: 60px;
+    border-radius: 25px;
+}
+
+.RSBSingle img{
+    width: 100%;
+    height: 60px;
+}
+
+/* @ DEPOSIT @ */
+
+.depositLevelContainer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 0 25px;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+.depositLevelContainer img{
+    width: 100%;
+}
+
+.DeCoValue{
+    width: 100%;
+    padding: 0 25px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #303030;
+}
+
+.DeCoVRecom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.DeCoVReRow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.DeCoVReRow button{
+    width: 100%;
+    height: 60px;
+    border-radius: 7px;
+    border: 1px solid #00abe1;
+    background-color: #f5f4f7;
+    font-size: 16px;
+    color: #686767;
+}
+
+.DeCoVSub{
+    color: #a1a1a1;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.depoval{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-family: 'shabnam';
+    text-align: center;
+    border: 1px solid #a1a1a1;
+    margin-top: 15px;
+}
+
+.depoSubBtn{
+    position: fixed;
+    bottom: 55px;
+    width: 100%;
+    height: 75px;
+    padding: 0 25px;
+}
+
+.depoSubBtn button{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #00abe1;
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.depoSubBtn button i{
+    font-size: 20px;
+}
+
+.DeCoValType{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 7px;
+}
+
+.DeCoValSingle{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #a1a1a1;
+    border-radius: 7px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DeCoValSingle img{
+    height: 70%;
+}
+
+/* @ MONEY TO POINT @ */
+
+.convertContainerTop{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 15px;
+    padding: 0 25px;
+}
+
+.CCTTopCont{
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 15px;
+}
+
+.CCTTTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 7px;
+}
+
+.CCTTSub{
+    color: #a1a1a1;
+    font-size: 14px;
+}
+
+.CCTTMainInput{
+    margin-top: 15px;
+    width: 100%;
+    height: 55px;
+    border-radius: 15px;
+    border: none;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 40px;
+}
+
+.CCTTMainInput:focus{
+    outline: none;
+}
+
+.CCTEmtiaz{
+    width: 100%;
+    height: 55px;
+    font-size: 40px;
+    text-align: left;
+    font-family: sans-serif;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.CCTChangeCont{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 10px solid #f5f4f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 40px);
+    right: 48px;
+}
+
+.CCTChangeCont img{
+    width: 50%;
+}
+
+/* @ WITHDRAW @ */
+
+.topWithCont{
+    position: relative;
+    width: 100%;
+    height: 204px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+}
+
+.withdrawImg{
+    position: absolute;
+    width: 340px;
+    z-index: -1;
+    top: 0;
+}
+
+.withdrawTxt{
+    width: 100%;
+    font-size: 32px;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10%;
+}
+
+.withval{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-family: 'shabnam';
+    text-align: center;
+    border: 1px solid #a1a1a1;
+    margin-top: 7px;
+}
+
+/* @ SETTING @ */
+
+.settingContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    padding-top: 75px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.settingTopR{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.settingTopR img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #00abe1;
+}
+
+.setTopRText{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 7px;
+}
+
+.setTopRTitle{
+    font-size: 14px;
+    font-weight: bold;
+    color: #686767;
+}
+
+.setTopRSub{
+    font-size: 12px;
+    color: #a1a1a1;
+}
+
+.settingTop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settingTop i{
+    font-size: 24px;
+}
+
+.settingMainContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.settingSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.settingSectionTitle{
+    color: #686767;
+    font-size: 14px;
+}
+
+.settingSingleCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    gap: 7px;
+}
+
+.settingSingle{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.settingSingleR{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.settingSingleR img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.settingSingle i{
+    font-size: 24px;
+    margin-top: 3px;
+}
+
+/* @ SETTING PROFILE AVATAR @ */
+
+.settingProfileCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.settingProTopCont{
+    width: 100%;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+.settingProTopCont img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    outline: 3px solid #00abe1;
+    padding: 3px;
+}
+
+.settingProDownCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.SPDCRow{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setProfImg{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.setProfImg.grayscaler{
+    filter: grayscale(1);
+    outline: 3px solid #686767;
+    padding: 3px;
+}
+
+.setProfImg.candidate{
+    animation: pulse-animation 1.5s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px #00ace1;
+    }
+    100% {
+      box-shadow: 0 0 0 10px rgba(26, 255, 0, 0);
+    }
+  }
+
+.settingButtonCont{
+    margin-top: 25px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    gap: 15px;
+}
+
+.setBtnContfill{
+    width: 50%;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 7px;
+    background-color: #00abe1;
+}
+
+.setBtnContout{
+    width: 50%;
+    height: 40px;
+    color: #00ace1;
+    border: 1px solid #00abe1;
+    border-radius: 7px;
+    background-color: transparent;
+}
+
+/* @ CHANGE PASSWORD @ */
+
+.changePassCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.CPCoTitle{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.changePassCont input{
+    width: 100%;
+    border: none;
+    height: 40px;
+    font-size: 24px;
+    padding-left: 15px;
+    margin-top: 7px;
+    border-radius: 7px;
+    border: 1px solid #686767;
+    text-align: left;
+}
+
+.changePCBtn{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #00abe1;
+    color: #ffffff;
+}
+
+.changePCBtnout{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    background-color: transparent;
+    color: #00abe1;
+    border: 1px solid #00abe1;
+}
+
+.changePassSubBtnCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: fixed;
+    bottom: 70px;
+    width: 100%;
+    height: 75px;
+    padding: 0 25px;
+}
+
+/* @ MY LOCATIONS @ */
+
+.locContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.locContSingle{
+    width: 100%;
+    height: 120px;
+    position: relative;
+    border-radius: 25px;
+}
+
+.locContSingle img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.locMainTxt{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: 12px;
+    padding-right: 17px;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+.locMTXTTitle{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.locMainBtn{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 7px;
+}
+
+.locMainBtn button{
+    width: 70px;
+    height: 30px;
+    background-color: #0689b2;
+    color: #ffffff;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-size: 12px;
+}
+
+.phoneMTXTSub{
+    font-size: 22px;
+    margin-top: 3px;
+}
+
+/* @ HOME @ */
+
+.topSiteBanners{
+    position: relative;
+    width: 100%;
+    height: 204px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+}
+
+.singleBanner{
+    position: absolute;
+    width: 340px;
+    z-index: -1;
+    top: 0;
+}
+
+.khadamatMa{
+    width: 100%;
+    padding: 0 25px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.khadamatTxt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.khadamatLine{
+    width: 120px;
+    height: 1px;
+    background-color: #686767;
+}
+
+.khadamatTitle{
+    font-size: 24px;
+    font-family: 'zeytoon';
+}
+
+.homeBtnContainer{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.dwonDiv{
+    margin-top: 0;
+}
+
+.dwonBanners{
+    margin-top: 15px;
+    padding: 0 25px;
+    padding-bottom: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.singledownBanner{
+    width: 340px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.fadingRow{
+    opacity: 0;
+    margin-top: 40px;
+    transition: all 600ms ease-in-out;
+}

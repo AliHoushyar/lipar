@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/app.css" />
+  </head>
+  <body>
+    <div class="loginContainer">
+      <img class="loginBack" src="./img/loginBack.jpg" alt="" />
+      <img class="loginLogo" src="./img/logo-light.png" alt="" />
+      <div class="loginTexts">
+        <span class="loginTextWel">خوش آمدید به</span>
+        <span class="loginTextMain">باشگاه مشتریان</span>
+        <span class="loginTextSub">هلدینگ نگین رز</span>
+      </div>
+      <div class="loginButtons">
+        <button id="LoginBtnMain" class="loginBtn">ورود</button>
+        <p class="loginForget">
+          رمز عبور خود را فراموش کردید ؟ <span>فراموشی رمز عبور</span>
+        </p>
+      </div>
+      <div class="loginForm">
+        <span class="loginFormtitle">ورود</span>
+        <span class="loginFormSub">برای ادامه وارد اکانت خود شوید</span>
+        <form id="loginMainForm" class="loginMainForm">
+          <input class="loginUser" type="text" placeholder="نام کاربری" />
+          <input class="loginPass" type="text" placeholder="رمز عبور" />
+          <button class="loginSubBtn" type="submit">ورود</button>
+        </form>
+      </div>
+      <div class="forgetPassForm">
+        <div class="forgetPassMain">
+          <div class="forgetPassfirst">
+            <span class="forgetPassTitle">بازیابی رمز عبور</span>
+            <span class="forgetPassDesc">
+              برای بازیابی رمز عبور،شماره‌ای که در دسترس دارید را وارد کنید . پس
+              از وارد کردن، کد تایید برای تنظیم رمز عبور جدید برای شما ارسال
+              خواهد شد.
+            </span>
+            <form id="forgetForm1" class="forgetPassPhoneInp">
+              <input
+                name="forgetNumber"
+                type="text"
+                placeholder="09150000000"
+              />
+              <button type="submit">تایید</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/forgetPass.js"></script>
+</html>
