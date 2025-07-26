@@ -12,35 +12,35 @@
   </head>
   <body>
     <div class="bottomMenu">
-      <button class="BMenuBtn">
+      <button id="PointBtn" class="BMenuBtn">
         <i class="bx bx-diamond"></i>
         <span>امتیازها</span>
       </button>
-      <button class="BMenuBtn">
+      <button id="WalletBtn" class="BMenuBtn">
         <i class="bx bx-wallet"></i>
         <span>کیف پول</span>
       </button>
-      <button class="BMenuBtn active">
+      <button id="HomeBtn" class="BMenuBtn">
         <i class="bx bx-home"></i>
         <span>خانه</span>
       </button>
-      <button class="BMenuBtn">
+      <button id="ProfBtn" class="BMenuBtn">
         <i class="bx bx-user"></i>
         <span>پروفایل</span>
       </button>
-      <button class="BMenuBtn">
+      <button id="SettBtn" class="BMenuBtn active">
         <i class="bx bx-cog"></i>
         <span>تنظیمات</span>
       </button>
     </div>
-    <div class="mainBigContainer">
-      <div class="topMenu">
-        <div class="TMLogoContainer">
-          <img class="topMenuLogo" src="./img/logo-dark.png" alt="" />
-          <div class="TMSep"></div>
-          <span class="TMLoc">تنظیمات</span>
-        </div>
+    <div class="topMenu">
+      <div class="TMLogoContainer">
+        <img class="topMenuLogo" src="./img/logo-dark.png" alt="" />
+        <div class="TMSep"></div>
+        <span class="TMLoc">تنظیمات</span>
       </div>
+    </div>
+    <div class="mainBigContainer">
       <div class="settingContainer">
         <div class="settingTop">
           <div class="settingTopR">
@@ -55,14 +55,14 @@
           <div class="settingSection">
             <span class="settingSectionTitle">شخصی</span>
             <div class="settingSingleCont">
-              <button class="settingSingle">
+              <button id="SiSeBtn1" class="settingSingle">
                 <div class="settingSingleR">
                   <img src="./img/profile.png" alt="" />
                   <span>مدیریت پروفایل</span>
                 </div>
                 <i class="bx bx-chevron-left"></i>
               </button>
-              <button class="settingSingle">
+              <button id="SiSeBtn2" class="settingSingle">
                 <div class="settingSingleR">
                   <img src="./img/pass.png" alt="" />
                   <span>تغییر رمز عبور</span>
@@ -71,17 +71,17 @@
               </button>
             </div>
           </div>
-          <div class="settingSection">
+          <div class="settingSection fadingRow">
             <span class="settingSectionTitle">اطلاعات فردی</span>
             <div class="settingSingleCont">
-              <button class="settingSingle">
+              <button id="SiSeBtn3" class="settingSingle">
                 <div class="settingSingleR">
                   <img src="./img/location.png" alt="" />
                   <span>آدرس‌ های من</span>
                 </div>
                 <i class="bx bx-chevron-left"></i>
               </button>
-              <button class="settingSingle">
+              <button id="SiSeBtn4" class="settingSingle">
                 <div class="settingSingleR">
                   <img src="./img/phone.png" alt="" />
                   <span>شماره تماس های من</span>
@@ -90,7 +90,7 @@
               </button>
             </div>
           </div>
-          <div class="settingSection">
+          <div class="settingSection fadingRow">
             <span class="settingSectionTitle">درباره ما</span>
             <div class="settingSingleCont">
               <button class="settingSingle">
@@ -113,4 +113,14 @@
       </div>
     </div>
   </body>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".mainBigContainer").css("opacity", "1");
+      $(".mainBigContainer").css("top", "0px");
+      $(".fadingRow").css("opacity", "1");
+      $(".fadingRow").css("margin-top", "0px");
+    });
+  </script>
 </html>

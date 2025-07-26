@@ -12,39 +12,39 @@
   </head>
   <body>
     <div class="bottomMenu">
-      <button class="BMenuBtn">
+      <button id="PointBtn" class="BMenuBtn">
         <i class="bx bx-diamond"></i>
         <span>امتیازها</span>
       </button>
-      <button class="BMenuBtn">
+      <button id="WalletBtn" class="BMenuBtn active">
         <i class="bx bx-wallet"></i>
         <span>کیف پول</span>
       </button>
-      <button class="BMenuBtn active">
+      <button id="HomeBtn" class="BMenuBtn">
         <i class="bx bx-home"></i>
         <span>خانه</span>
       </button>
-      <button class="BMenuBtn">
+      <button id="ProfBtn" class="BMenuBtn">
         <i class="bx bx-user"></i>
         <span>پروفایل</span>
       </button>
-      <button class="BMenuBtn">
+      <button id="SettBtn" class="BMenuBtn">
         <i class="bx bx-cog"></i>
         <span>تنظیمات</span>
       </button>
     </div>
+    <div class="topMenu">
+      <div class="TMLogoContainer">
+        <img class="topMenuLogo" src="./img/logo-dark.png" alt="" />
+        <div class="TMSep"></div>
+        <span class="TMLoc">واریز</span>
+      </div>
+    </div>
     <div class="mainBigContainer">
-      <div class="topMenu">
-        <div class="TMLogoContainer">
-          <img class="topMenuLogo" src="./img/logo-dark.png" alt="" />
-          <div class="TMSep"></div>
-          <span class="TMLoc">واریز</span>
-        </div>
-      </div>
-      <div class="depoSubBtn">
-        <button><i class="bx bx-right-arrow-alt"></i>ادامه</button>
-      </div>
       <div class="depositContainer">
+        <div class="depoSubBtn">
+          <button><i class="bx bx-right-arrow-alt"></i>ادامه</button>
+        </div>
         <div class="depositLevelContainer">
           <img src="./img/depositL2.png" alt="" />
         </div>
@@ -52,15 +52,15 @@
           <span class="DeCoVTitle">روش پرداخت</span>
           <span class="DeCoVSub">روش پرداخت را انتخاب کنید</span>
           <div class="DeCoValType">
-            <div class="DeCoValSingle">
+            <div class="DeCoValSingle fadingRow">
               <span>به پرداخت ملت</span>
               <img src="./img/melat.png" alt="" />
             </div>
-            <div class="DeCoValSingle">
+            <div class="DeCoValSingle fadingRow">
               <span>پرداخت پاسارگاد</span>
               <img src="./img/pasar.png" alt="" />
             </div>
-            <div class="DeCoValSingle">
+            <div class="DeCoValSingle fadingRow">
               <span>شاپرک</span>
               <img src="./img/shaparak.png" alt="" />
             </div>
@@ -69,4 +69,14 @@
       </div>
     </div>
   </body>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".mainBigContainer").css("opacity", "1");
+      $(".mainBigContainer").css("top", "0px");
+      $(".fadingRow").css("opacity", "1");
+      $(".fadingRow").css("margin-top", "0px");
+    });
+  </script>
 </html>

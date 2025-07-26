@@ -91,11 +91,8 @@ a{
     width: 100%;
     height: 100%;
     position: relative;
-    transition: all 300ms ease-in-out;
-}
-
-#MaBiCo{
     opacity: 0;
+    transition: all 300ms ease-in-out;
 }
 
 .BMenuBtn{
@@ -192,23 +189,13 @@ a{
 }
 
 .loginBtn{
-    width: 162px;
+    width: 225px;
     height: 40px;
     font-size: 18px;
     color: #ffffff;
     border: 2px solid #92DCF3;
     border-radius: 20px;
     background-color: transparent;
-}
-
-.loginForget{
-    font-size: 12px;
-    margin-top: 7px;
-    color: #C7EDF9;
-}
-
-.loginForget span{
-    color: #ffffff;
 }
 
 .loginForm{
@@ -304,7 +291,7 @@ a{
 }
 
 .forgetPassTitle{
-    font-size: 32px;
+    font-size: 24px;
     font-family: 'fani';
     color: #00abe1;
 }
@@ -510,7 +497,8 @@ a{
 
 
 .invContaoner , .walletContainer , .pointContainer 
-, .depositContainer , .convertContainer , .homeContainer
+, .depositContainer , .convertContainer , .homeContainer 
+, .chapGozerContainer, .giftContainer
 {
     width: 100%;
     display: flex;
@@ -521,6 +509,10 @@ a{
 
 .walletContainer , .pointContainer , .homeContainer{
     padding-top: 50px;
+}
+
+.chapGozerContainer{
+    padding-top: 0px;
 }
 
 .ICImg{
@@ -600,7 +592,7 @@ a{
 }
 
 .WCSub{
-    font-size: 44px;
+    font-size: 36px;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -652,7 +644,6 @@ a{
 .WBCSingle2 img{
     width: 100%;
 }
-
 
 /* @ POINTS @ */
 
@@ -711,7 +702,6 @@ a{
 }
 
 .PPTMainBar{
-    width: 70%;
     height: 100%;
     border-radius: 10px;
 }
@@ -1764,4 +1754,159 @@ a{
     opacity: 0;
     margin-top: 40px;
     transition: all 600ms ease-in-out;
+}
+
+.fadingRowType2{
+    opacity: 0;
+    margin-top: 40px;
+    transition: all 600ms ease-in-out;
+}
+
+.mainLoader{
+    position: absolute;
+    top: 280px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.mainLoader img{
+    width: 60px;
+}
+
+/* @ REPORT @ */
+
+.gozareshTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    text-align: center;
+    padding: 25px;
+    color: #a1a1a1;
+}
+
+.gozarTitleMain{
+    font-size: 32px;
+    font-family: 'fani';
+    color: #00ace1;
+}
+
+.gozarDatePick{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.gozarDPTitle{
+    width: 100%;
+    color: #a1a1a1;
+    font-size: 14px;
+    padding-right: 25px;
+}
+
+.gozarDPFTop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gozarDPFTop input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 7px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'shabnam';
+}
+
+.gozarDPFRadio{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.gozarDPFRadio img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.gozarDPForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.gozarDPFTitle{
+    width: 100%;
+    color: #a1a1a1;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+/* @ GIFTS @ */
+
+.giftsCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0 25px ;
+    padding-bottom: 90px;
+}
+
+.singleGift{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.singleGift img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.singleGiftTxt{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+.singleGiftTxt button{
+    width: 70px;
+    height: 35px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 12px;
 }

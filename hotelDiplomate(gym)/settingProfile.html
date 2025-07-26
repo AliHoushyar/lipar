@@ -12,41 +12,41 @@
   </head>
   <body>
     <div class="bottomMenu">
-      <button class="BMenuBtn">
+      <button id="PointBtn" class="BMenuBtn">
         <i class="bx bx-diamond"></i>
         <span>امتیازها</span>
       </button>
-      <button class="BMenuBtn">
+      <button id="WalletBtn" class="BMenuBtn">
         <i class="bx bx-wallet"></i>
         <span>کیف پول</span>
       </button>
-      <button class="BMenuBtn active">
+      <button id="HomeBtn" class="BMenuBtn">
         <i class="bx bx-home"></i>
         <span>خانه</span>
       </button>
-      <button class="BMenuBtn">
+      <button id="ProfBtn" class="BMenuBtn">
         <i class="bx bx-user"></i>
         <span>پروفایل</span>
       </button>
-      <button class="BMenuBtn">
+      <button id="SettBtn" class="BMenuBtn active">
         <i class="bx bx-cog"></i>
         <span>تنظیمات</span>
       </button>
     </div>
-    <div class="mainBigContainer">
-      <div class="topMenu">
-        <div class="TMLogoContainer">
-          <img class="topMenuLogo" src="./img/logo-dark.png" alt="" />
-          <div class="TMSep"></div>
-          <span class="TMLoc">مدیریت پروفایل</span>
-        </div>
+    <div class="topMenu">
+      <div class="TMLogoContainer">
+        <img class="topMenuLogo" src="./img/logo-dark.png" alt="" />
+        <div class="TMSep"></div>
+        <span class="TMLoc">مدیریت پروفایل</span>
       </div>
+    </div>
+    <div class="mainBigContainer">
       <div class="settingProfileCont">
         <div class="settingProTopCont">
           <img src="./img/profiles/prof1.jpg" alt="" />
         </div>
         <div class="settingProDownCont">
-          <div class="SPDCRow">
+          <div class="SPDCRow fadingRow">
             <img
               id="PIMG1"
               class="setProfImg"
@@ -66,7 +66,7 @@
               alt=""
             />
           </div>
-          <div class="SPDCRow">
+          <div class="SPDCRow fadingRow">
             <img
               id="PIMG4"
               class="setProfImg grayscaler"
@@ -86,7 +86,7 @@
               alt=""
             />
           </div>
-          <div class="SPDCRow">
+          <div class="SPDCRow fadingRow">
             <img
               id="PIMG7"
               class="setProfImg"
@@ -114,4 +114,14 @@
       </div>
     </div>
   </body>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".mainBigContainer").css("opacity", "1");
+      $(".mainBigContainer").css("top", "0px");
+      $(".fadingRow").css("opacity", "1");
+      $(".fadingRow").css("margin-top", "0px");
+    });
+  </script>
 </html>

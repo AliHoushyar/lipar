@@ -37,34 +37,39 @@
       <div class="TMLogoContainer">
         <img class="topMenuLogo" src="./img/logo-dark.png" alt="" />
         <div class="TMSep"></div>
-        <span class="TMLoc">واریز</span>
+        <span class="TMLoc">چاپ گزارش</span>
       </div>
     </div>
     <div class="mainBigContainer">
-      <div class="depositContainer">
-        <div id="DeSbtnMain" class="depoSubBtn">
-          <button><i class="bx bx-right-arrow-alt"></i>ادامه</button>
+      <div class="chapGozerContainer">
+        <div class="depoSubBtn">
+          <button>دریافت گزارش</button>
         </div>
-        <div class="depositLevelContainer">
-          <img src="./img/depositL1.png" alt="" />
-        </div>
-        <div class="DeCoValue">
-          <span class="DeCoVTitle">مبالغ پیشنهادی</span>
-          <div class="DeCoVRecom">
-            <div class="DeCoVReRow fadingRow">
-              <button>100,000 تومان</button>
-              <button>200,000 تومان</button>
-            </div>
-            <div class="DeCoVReRow fadingRow">
-              <button>500,000 تومان</button>
-              <button>1,000,000 تومان</button>
-            </div>
+        <div class="walletContainer">
+          <div class="gozareshTitle">
+            <span class="gozarTitleMain">گزارش گیری</span>
+            <span
+              >در این بخش می‌توانید با انتخاب فیلترهای مختلف، گزارش‌های متنوع و
+              جامع خود را مشاهده کرده و به راحتی فایل Excel یا PDF آن‌ها را
+              دریافت کنید.</span
+            >
           </div>
-        </div>
-        <div class="DeCoValue">
-          <span class="DeCoVTitle">مبلغ دلخواه</span>
-          <span class="DeCoVSub">مبلغ مورد نظر خود را وارد کنید</span>
-          <input class="depoval" type="text" name="DepoVal" id="DepositValue" />
+          <span class="gozarDPTitle">بازه تاریخی مرود نظر را وارد کنید</span>
+          <form class="gozarDPForm" action="">
+            <div class="gozarDPFTop">
+              <input type="text" name="StrDate" placeholder="تاریخ شروع" />
+              <input type="text" name="FinDate" placeholder="تاریخ پایان" />
+            </div>
+            <span class="gozarDPFTitle">نوع گزارش خود را انتخاب کنید</span>
+            <div class="gozarDPFTop">
+              <div class="gozarDPFRadio" data-value="excel">
+                <img src="./img/excel.png" alt="" />
+              </div>
+              <div class="gozarDPFRadio" data-value="pdf">
+                <img src="./img/pdf.png" alt="" />
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -75,8 +80,6 @@
     $(document).ready(function () {
       $(".mainBigContainer").css("opacity", "1");
       $(".mainBigContainer").css("top", "0px");
-      $(".fadingRow").css("opacity", "1");
-      $(".fadingRow").css("margin-top", "0px");
     });
   </script>
 </html>

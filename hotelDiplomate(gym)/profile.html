@@ -12,70 +12,82 @@
   </head>
   <body>
     <div class="bottomMenu">
-      <button class="BMenuBtn">
+      <button id="PointBtn" class="BMenuBtn">
         <i class="bx bx-diamond"></i>
         <span>امتیازها</span>
       </button>
-      <button class="BMenuBtn">
+      <button id="WalletBtn" class="BMenuBtn">
         <i class="bx bx-wallet"></i>
         <span>کیف پول</span>
       </button>
-      <button class="BMenuBtn active">
+      <button id="HomeBtn" class="BMenuBtn">
         <i class="bx bx-home"></i>
         <span>خانه</span>
       </button>
-      <button class="BMenuBtn">
+      <button id="ProfBtn" class="BMenuBtn active">
         <i class="bx bx-user"></i>
         <span>پروفایل</span>
       </button>
-      <button class="BMenuBtn">
+      <button id="SettBtn" class="BMenuBtn">
         <i class="bx bx-cog"></i>
         <span>تنظیمات</span>
       </button>
     </div>
+    <div class="topMenu">
+      <div class="TMLogoContainer">
+        <img class="topMenuLogo" src="./img/logo-dark.png" alt="" />
+        <div class="TMSep"></div>
+        <span class="TMLoc">پروفایل</span>
+      </div>
+      <button class="TMBtn"></button>
+    </div>
     <div class="mainBigContainer">
-      <div class="topMenu">
-        <div class="TMLogoContainer">
-          <img class="topMenuLogo" src="./img/logo-dark.png" alt="" />
-          <div class="TMSep"></div>
-          <span class="TMLoc">پروفایل</span>
+      <div class="profContainer">
+        <div class="profTop">
+          <div class="PTImage">
+            <img src="./img/placeholderTest.jpg" alt="" />
+            <div class="PTIShade"></div>
+            <button class="PTIEdit"><i class="bx bx-pencil"></i></button>
+          </div>
+          <div class="PTTxt">
+            <p class="PTTName">علی هوشیار خوشدل</p>
+            <p>طراح سایت</p>
+          </div>
+          <img class="wave" src="./img/wave.png" alt="" />
         </div>
-        <button class="TMBtn"></button>
-      </div>
-      <div class="profTop">
-        <div class="PTImage">
-          <img src="./img/placeholderTest.jpg" alt="" />
-          <div class="PTIShade"></div>
-          <button class="PTIEdit"><i class="bx bx-pencil"></i></button>
+        <div class="profOpt">
+          <button id="SiPrfBtn1" class="POSingle fadingRow">
+            <i class="bx bx-user"></i>
+            <span>پروفایل من</span>
+          </button>
+          <button id="SiPrfBtn2" class="POSingle fadingRow">
+            <i class="bx bx-wallet"></i>
+            <span>کیف پول</span>
+          </button>
+          <button id="SiPrfBtn3" class="POSingle fadingRow">
+            <i class="bx bx-gift"></i>
+            <span>هدایا</span>
+          </button>
+          <button id="SiPrfBtn4" class="POSingle fadingRow">
+            <i class="bx bx-user-plus"></i>
+            <span>دعوت از دوستان</span>
+          </button>
+          <button id="SiPrfBtn5" class="POSingle fadingRow">
+            <i class="bx bx-log-out"></i>
+            <span>خروج</span>
+          </button>
         </div>
-        <div class="PTTxt">
-          <p class="PTTName">علی هوشیار خوشدل</p>
-          <p>طراح سایت</p>
-        </div>
-        <img class="wave" src="./img/wave.png" alt="" />
-      </div>
-      <div class="profOpt">
-        <button class="POSingle">
-          <i class="bx bx-user"></i>
-          <span>پروفایل من</span>
-        </button>
-        <button class="POSingle">
-          <i class="bx bx-wallet"></i>
-          <span>کیف پول</span>
-        </button>
-        <button class="POSingle">
-          <i class="bx bx-gift"></i>
-          <span>هدایا</span>
-        </button>
-        <button class="POSingle">
-          <i class="bx bx-user-plus"></i>
-          <span>دعوت از دوستان</span>
-        </button>
-        <button class="POSingle">
-          <i class="bx bx-log-out"></i>
-          <span>خروج</span>
-        </button>
       </div>
     </div>
   </body>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".mainBigContainer").css("opacity", "1");
+      $(".mainBigContainer").css("top", "0px");
+      $(".fadingRow").css("opacity", "1");
+      $(".fadingRow").css("margin-top", "0px");
+    });
+  </script>
 </html>
