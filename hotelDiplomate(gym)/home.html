@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style/app.css" />
+    <link rel="stylesheet" href="./style/medias.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -40,43 +41,108 @@
         <span class="TMLoc">خانه</span>
       </div>
     </div>
+    <div class="sideBarCont">
+      <img src="./img/longlogo.png" alt="" />
+      <div class="sideBarBtns">
+        <button id="HomeBtn" class="sideBarSingleBtn active">
+          <div class="sideBarBtnShad"></div>
+          <div class="sideBarBtnTxt">
+            <i class="bx bx-home"></i>
+            <span>خانه</span>
+          </div>
+        </button>
+        <button id="ProfBtn" class="sideBarSingleBtn">
+          <div class="sideBarBtnShad"></div>
+          <div class="sideBarBtnTxt">
+            <i class="bx bx-user"></i>
+            <span>پروفایل</span>
+          </div>
+        </button>
+        <button id="WalletBtn" class="sideBarSingleBtn">
+          <div class="sideBarBtnShad"></div>
+          <div class="sideBarBtnTxt">
+            <i class="bx bx-wallet"></i>
+            <span>کیف پول</span>
+          </div>
+        </button>
+        <button id="PointBtn" class="sideBarSingleBtn">
+          <div class="sideBarBtnShad"></div>
+          <div class="sideBarBtnTxt">
+            <i class="bx bx-diamond"></i>
+            <span>امتیازها</span>
+          </div>
+        </button>
+        <button id="SettBtn" class="sideBarSingleBtn">
+          <div class="sideBarBtnShad"></div>
+          <div class="sideBarBtnTxt">
+            <i class="bx bx-cog"></i>
+            <span>تنظیمات</span>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="navBar">
+      <span>خانه</span>
+      <div class="navbarBtns">
+        <button class="navSingleBtn">
+          <img src="./img/mailBox.jpg" alt="" />
+        </button>
+        <button class="navSingleBtn">
+          <img src="./img/gifts.jpg" alt="" />
+        </button>
+        <button class="navSingleBtn">
+          <img src="./img/profiles/prof1.jpg" alt="" />
+        </button>
+      </div>
+    </div>
     <div class="mainBigContainer">
       <div class="homeContainer">
         <div class="topSiteBanners">
           <img class="singleBanner" src="./img/banner1.png" alt="" />
+          <img class="singleBannerSub" src="./img/webBigBanner.png" alt="" />
         </div>
-        <div class="khadamatMa">
-          <div class="khadamatTxt">
-            <span class="khadamatTitle">خدمات ما</span>
-            <div class="khadamatLine"></div>
+        <div class="khadamatAndBanner">
+          <div class="khadamatMa">
+            <div class="khadamatTxt">
+              <span class="khadamatTitle">خدمات ما</span>
+              <div class="khadamatLine"></div>
+            </div>
           </div>
-        </div>
-        <div class="homeBtnContainer">
-          <div class="WBCRow fadingRow">
-            <button class="WBCSingle">
-              <img src="./img/restaurantHome.png" alt="" />
-            </button>
-            <button class="WBCSingle">
-              <img src="./img/trainHome.png" alt="" />
-            </button>
+          <div class="homeBtnContainer">
+            <div class="WBCRow fadingRow">
+              <button class="WBCSingle">
+                <img
+                  class="WBCSingleMain"
+                  src="./img/restaurantHome.png"
+                  alt=""
+                />
+                <img class="WBCSingleSub" src="./img/restBigger.png" alt="" />
+              </button>
+              <button class="WBCSingle">
+                <img class="WBCSingleMain" src="./img/trainHome.png" alt="" />
+                <img class="WBCSingleSub" src="./img/trainBigger.png" alt="" />
+              </button>
+            </div>
+            <div class="WBCRow fadingRow">
+              <button class="WBCSingle">
+                <img class="WBCSingleMain" src="./img/hotelhome.png" alt="" />
+                <img class="WBCSingleSub" src="./img/hotelBigger.png" alt="" />
+              </button>
+              <button class="WBCSingle">
+                <img class="WBCSingleMain" src="./img/hallhome.png" alt="" />
+                <img class="WBCSingleSub" src="./img/hallBigger.png" alt="" />
+              </button>
+            </div>
           </div>
-          <div class="WBCRow fadingRow">
-            <button class="WBCSingle">
-              <img src="./img/hotelhome.png" alt="" />
-            </button>
-            <button class="WBCSingle">
-              <img src="./img/hallhome.png" alt="" />
-            </button>
+          <div class="khadamatMa dwonDiv">
+            <div class="khadamatTxt">
+              <span class="khadamatTitle">جشنواره ها</span>
+              <div class="khadamatLine"></div>
+            </div>
           </div>
-        </div>
-        <div class="khadamatMa dwonDiv">
-          <div class="khadamatTxt">
-            <span class="khadamatTitle">جشنواره ها</span>
-            <div class="khadamatLine"></div>
+          <div class="dwonBanners">
+            <img class="singledownBanner" src="./img/bannerw.png" alt="" />
           </div>
-        </div>
-        <div class="dwonBanners">
-          <img class="singledownBanner" src="./img/bannerw.png" alt="" />
         </div>
       </div>
     </div>

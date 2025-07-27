@@ -1,0 +1,98 @@
+@media (min-width: 1200px) {
+    .loginContainer{
+        width: 90%;
+        height: 90vh;
+        border-radius: 40px;
+        right: 50%;
+        transform: translateX(50%);
+        top: 33px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    .loginButtons{
+        display: none;
+    }
+    .forgetPassForm{
+        bottom: 0;
+        width: 45%;
+        height: 100%;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+    .forgetPassMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .forgetPassfirst , .forgetPassSec{
+        justify-content: center;
+        width: 80%;
+        gap: 15px;
+    }
+    .loginLogo , .loginTexts{
+        right: 70%;
+    }
+    .loginLogo{
+        top: 40%;
+    }
+    .loginTexts{
+        top: 70%;
+    }
+
+    /* HOME */
+
+    .bottomMenu , .topMenu{
+        display: none;
+    }
+
+    .mainBigContainer{
+        width: calc(100% - 300px);
+        height: calc(100% - 75px);
+        margin-right: 300px;
+        margin-top: 75px;
+    }
+
+    .homeContainer , .profContainer{
+        padding-top: 15px;
+    }
+    .singleBanner{
+        display: none;
+    }
+    .khadamatMa{
+        align-items: start;
+        justify-content: start;
+    }
+    .khadamatTxt{
+        align-items: start;
+        justify-content: start;
+    }
+    .khadamatAndBanner{
+        padding: 0 15px;
+    }
+    .homeBtnContainer{
+        flex-direction: row;
+    }
+    .WBCSingle{
+        width: 100%;
+    }
+    .WBCSingleMain{
+        display: none;
+    }
+    .dwonBanners{
+        padding-bottom: 15px;
+        align-items: start;
+    }
+
+    /* @ PROFILE @ */
+
+    .profOpt , .profTop{
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .singleBannerSub , .navBar , .sideBarCont , .WBCSingleSub
+    , .proTopDesk , .proBottomDesk{
+        display: none;
+    }
+}
