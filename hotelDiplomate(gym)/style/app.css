@@ -1699,12 +1699,6 @@ a{
     top: 0;
 }
 
-.singleBannerSub{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-}
-
 .khadamatAndBanner{
     width: 100%;
     height: 100%;
@@ -1982,7 +1976,7 @@ a{
     top: 50%;
     transform: translateY(-50%);
     background-color: #00abe1;
-    transition: all 250ms ease-in-out;
+    transition: all 500ms ease-in-out;
     z-index: 1;
     border-radius: 15px;
 }
@@ -2046,7 +2040,7 @@ button.active .sideBarBtnShad {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 25px;
+    padding: 0 15px;
     position: relative;
 }
 
@@ -2072,7 +2066,7 @@ button.active .sideBarBtnShad {
     align-items: center;
     /* justify-content: center; */
     margin-top: 100px;
-    padding: 0 25px;
+    padding: 0 15px;
     gap: 15px;
 }
 
@@ -2177,11 +2171,634 @@ button.active .sideBarBtnShad {
 
 .profBDLTNumber{
     font-size: 48px;
-    margin-top: 15px;
     font-weight: bold;
     color: #00abe1;
 }
 
 .currency{
     font-size: 20px;
+}
+
+.profBDLDown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    margin-top: 20px;
+}
+
+.profBDLDTop{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profBDLDTBtn img{
+    height: 90px;
+}
+
+.profBDLDTDBtn{
+    width: 100%;
+    height: 40px;
+    background-color: #00abe1;
+    color: #ffffff;
+    border-radius: 7px;
+}
+
+/* @ DESKTOP WALLET @ */
+
+.newWalletCont{
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+.rightWalCont{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.rightWalTop{
+    width: 100%;
+    height: 180px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.rightWalTop img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.rightWalContBtn{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 7px;
+    background-color: transparent;
+    color: #ffffff;
+    bottom: 25px;
+    right: 20px;
+    transition: all 250ms ease-in-out;
+}
+
+.rightWalContBtn:hover{
+    background-color: #ffffff;
+    color: #00abe1;
+}
+
+.rightWalMid{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.rightWalMidBtn{
+    width: 100%;
+    height: 120px;
+    border-radius: 15px;
+    transition: all 250ms ease-in-out;
+}
+
+.rightWalMidBtn img{
+    border-radius: 15px;
+}
+
+.rightWalMidBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.rightWalDown{
+    width: 100%;
+    height: 260px;
+    background-color: #00ace1;
+}
+
+.leftWalCont{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.lefWalMoneyCont , .lefWalMTOPCont{
+    width: 100%;
+    height: 287px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.leftWalProfile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.leftWalProfile img{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    outline: 3px solid #00abe1;
+    padding: 3px;
+}
+
+.leftWalProfile span{
+    font-size: 14px;
+    color: #686767;
+}
+
+.leftWalMoney{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.leftWalMoneyMain{
+    font-size: 52px;
+}
+
+.leftWalMoneyCur{
+    margin-top: 7px;
+}
+
+.leftWalBtn{
+    width: 120px;
+    height: 30px;
+    background-color: #00abe1;
+    border-radius: 15px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: all 100ms ease-in-out;
+}
+
+.leftWalBtn:hover{
+    outline: 2px solid #00abe1;
+}
+
+.leftWalMTOPTop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+.leftWalMTOPTopBtn{
+    width: 60px;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid #a1a1a1;
+    color: #a1a1a1;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+.leftWalMTOPTopBtn.active{
+    background-color: #00abe1;
+    color: #ffffff;
+    border: none;
+}
+
+.leftWalMTOPMain{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.leftWalMTOPMainDiv{
+    width: 100%;
+    height: 70px;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mablaghInMTOP{
+    color: #a1a1a1;
+    width: 100%;
+    padding-right: 15px;
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.mablaghINPMTOP{
+    width: 100%;
+    height: 42px;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    text-align: left;
+    background-color: transparent;
+    font-family: sans-serif;
+}
+
+.mablaghINPMTOP:focus{
+    outline: none;
+}
+
+.leftWalMTOPMainBtn{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 7px;
+    background-color: #00abe1;
+    color: #ffffff;
+}
+
+.mablaghSampleMid{
+    width: 60px;
+    height: 60px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 48px;
+    right: 5%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mablaghSampleMid img{
+    width: 80%;
+    height: 80%;
+}
+
+.deskBigBanner{
+    width: 100%;
+    height: 180px;
+    padding: 0 15px;
+}
+
+.deskBigBanner img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.deskKhadamat{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 0 15px;
+    margin-top: 25px;
+}
+
+.deskSingleKhadamat{
+    width: 25%;
+    height: 120px;
+    background-color: #00abe1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 250ms ease-in-out;
+}
+
+.deskSingleKhadamat img{
+    width: 100%;
+    height: 100%;
+}
+
+.deskSingleKhadamat:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.deskFest{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2%;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    margin-top: 25px;
+}
+
+.deskFetsBtn{
+    width: 49%;
+    height: 180px;
+}
+
+.deskFetsBtn img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.settingRightContainer{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.settingRightTopCont{
+    width: 100%;
+    min-height: 287px;
+    max-height: 289px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.settingRighTopTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.settingRighTopTitle span{
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+    color: #686767;
+}
+
+.settingRTTLine{
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.settingRightTopSingle{
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.settingRightTopSinglesCont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.settingRTSImg{
+    width: 4%;
+}
+
+.settingRSTName{
+    font-size: 14px;
+    text-align: center;
+    width: 30%;
+}
+
+.settingRSTNumber{
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 30%;
+}
+
+.settingRSTLocTxt{
+    font-size: 12px;
+    width: 30%;
+}
+
+.settingRSTBtn{
+    width: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.settingRSTBSingle{
+    width: 80px;
+    height: 40px;
+    background-color: #00abe1;
+    border-radius: 7px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.settingLeftContainer{
+    width: 35%;
+    height: 100%;
+}
+
+.settingLeftTopContaner , .settingLeftDownContaner{
+    width: 100%;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.settingLeftDownContaner{
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-top: 12px;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.settingLDCTitle{
+    font-size: 18px;
+}
+
+.settingLTCTop{
+    width: 100%;
+    height: 42%;
+}
+
+.settingLTCDown{
+    width: 100%;
+    height: 50%;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+}
+
+.settingLTCTop img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.settingLTCDTop{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.settingLTCDTop img{
+    height: 80%;
+    border-radius: 50%;
+    outline: 3px solid #00abe1;
+    border: 3px solid #ffffff;
+}
+
+.settingLTCDDown{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.settingLTCDDImg{
+    width: 35px;
+    border-radius: 50%;
+}
+
+.settingLTCDDImg.choosen{
+    filter: grayscale(1);
+}
+
+.settingLTCDDImg.active{
+    outline: 3px solid #00abe1;
+    border: 3px solid #ffffff;
+}
+
+.settingLTCDTop button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.changePassSetting{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    margin-top: -10px;
+}
+
+.changePassSetting button{
+    width: 100%;
+    height: 30px;
+    background-color: #00abe1;
+    color: #ffffff;
+    border-radius: 7px;
+    margin-top: 17px;
+}
+
+.cPSSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cPSSection span{
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+}
+
+.cPSSection input{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+    border: none;
+    background-color: #ebebeb;
+    margin-top: 7px;
+    border-radius: 7px;
+}
+
+.cPSSection input:focus{
+    outline: none;
+}
+
+.mainInvDesk{
+    width: 100%;
+    height: 89vh;
+    position: relative;
+}
+
+.inviteBg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.inviteCodeDesk , .inviteCodeDesk2{
+    width: 500px;
+    height: 60px;
+    background-color: transparent;
+    position: absolute;
+    right: 5%;
+    bottom: 44%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 24px;
+}
+
+.inviteCodeDesk2{
+    bottom: 31%;
+    background-color: #ffffff;
+    color: #00abe1;
 }

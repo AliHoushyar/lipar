@@ -41,7 +41,8 @@
 
     /* HOME */
 
-    .bottomMenu , .topMenu{
+    .bottomMenu , .topMenu , .settingTop , .settingMainContainer , .topSiteBanners 
+    , .khadamatAndBanner , .invContaoner{
         display: none;
     }
 
@@ -52,35 +53,8 @@
         margin-top: 75px;
     }
 
-    .homeContainer , .profContainer{
+    .homeContainer , .profContainer , .walletContainer , .settingContainer{
         padding-top: 15px;
-    }
-    .singleBanner{
-        display: none;
-    }
-    .khadamatMa{
-        align-items: start;
-        justify-content: start;
-    }
-    .khadamatTxt{
-        align-items: start;
-        justify-content: start;
-    }
-    .khadamatAndBanner{
-        padding: 0 15px;
-    }
-    .homeBtnContainer{
-        flex-direction: row;
-    }
-    .WBCSingle{
-        width: 100%;
-    }
-    .WBCSingleMain{
-        display: none;
-    }
-    .dwonBanners{
-        padding-bottom: 15px;
-        align-items: start;
     }
 
     /* @ PROFILE @ */
@@ -88,11 +62,104 @@
     .profOpt , .profTop{
         display: none;
     }
+
+    /* @ WALLET @ */
+
+    .topWalCont , .walletBtnContainer{
+        display: none;
+    }
+
+    .chartContainer{
+        height: 260px;
+    }
+
+    .card{
+        width: 100%;
+        height: 253px;
+        background-color: transparent;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .card .statistic{
+        width: 100%;
+        height: 90%;
+    }
+
+    .line1Num , .line2Num ,.line3Num ,.line4Num ,.line5Num{
+        color: #c6c6c6;
+        font-size: 14px;
+    }
+
+    .card .days {
+        width: 92%;
+        margin-right: 0px;
+    }
+    
+    .card .days .day{
+        color: #c6c6c6;
+        font-size: 12px;
+        width: calc(100% / 10);
+    }
+
+    .card .statistic .data polyline{
+        stroke: aqua;
+    }
+
+    .card .statistic .line-1 , .card .statistic .line-2 , .card .statistic .line-3 , .card .statistic .line-4 , .card .statistic .line-5{
+        background-color: #eaeaea;
+        width: 92%;
+    }
+
+    .card .statistic .line-5{
+        top: 200px;
+    }
+
+    .card .statistic .line-2{
+        top: 65px;
+    }
+
+    .line2Num{
+        top: 56px;
+    }
+
+    .card .statistic .line-3{
+        top: 110px;
+    }
+
+    .line3Num{
+        top: 102px;
+    }
+
+    .card .statistic .line-4{
+        top: 155px;
+    }
+
+    .line4Num{
+        top: 146px;
+    }
+
+    .line5Num{
+        top: 192px;
+    }
+
+    .card .statistic .data svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .settingContainer{
+        padding: 15px;
+        flex-direction: row;
+        gap: 15px;
+    }
 }
 
 @media (max-width: 920px) {
     .singleBannerSub , .navBar , .sideBarCont , .WBCSingleSub
-    , .proTopDesk , .proBottomDesk{
+    , .proTopDesk , .proBottomDesk , .newWalletCont , .settingLeftContainer
+    ,.settingRightContainer , .mainInvDesk{
         display: none;
     }
 }

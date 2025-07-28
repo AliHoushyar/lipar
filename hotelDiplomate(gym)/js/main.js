@@ -32,10 +32,10 @@ $(document).ready(function() {
         $('.loginLogo').css('top','100px');
     })
 
-    $(document).on("click", "#WalletBtn , #SiPrfBtn2", function () {
+    $(document).on("click", "#WalletBtn , #WalletBtn2 , #SiPrfBtn2", function () {
         $(".mainBigContainer").css('opacity', '0');
-        $(".BMenuBtn").removeClass("active");
-        $("#WalletBtn").addClass("active");
+        $(".BMenuBtn , .sideBarSingleBtn").removeClass("active");
+        $("#WalletBtn , #WalletBtn2").addClass("active");
         history.pushState(null, '', "wallet.html");
         setTimeout(function () {
             $(".mainBigContainer").load("wallet.html .walletContainer", function () {
@@ -51,16 +51,16 @@ $(document).ready(function() {
                     });
                 }, 20);
     
-                $("#WalletBtn").addClass("active");
+                $("#WalletBtn , #WalletBtn2").addClass("active");
                 $(".TMLoc").html("کیف پول")
             });
         }, 150);
     });
     
-    $(document).on("click", "#HomeBtn", function () {
+    $(document).on("click", "#HomeBtn , #HomeBtn2", function () {
         $(".mainBigContainer").css('opacity', '0');
-        $(".BMenuBtn").removeClass("active");
-        $("#HomeBtn").addClass("active");
+        $(".BMenuBtn , .sideBarSingleBtn").removeClass("active");
+        $("#HomeBtn , #HomeBtn2").addClass("active");
         history.pushState(null, '', "home.html");
         setTimeout(function () {
             $(".mainBigContainer").load("home.html .homeContainer", function () {
@@ -75,16 +75,16 @@ $(document).ready(function() {
                         marginTop: "0px",
                     });
                 }, 20);
-                $("#HomeBtn").addClass("active");
+                $("#HomeBtn , #HomeBtn2").addClass("active");
                 $(".TMLoc").html("خانه")
             });
         }, 150);
     });
 
-    $(document).on("click", "#ProfBtn", function () {
+    $(document).on("click", "#ProfBtn , #ProfBtn2", function () {
         $(".mainBigContainer").css('opacity', '0');
-        $(".BMenuBtn").removeClass("active");
-        $("#ProfBtn").addClass("active");
+        $(".BMenuBtn , .sideBarSingleBtn").removeClass("active");
+        $("#ProfBtn , #ProfBtn2").addClass("active");
         history.pushState(null, '', "profile.html");
         setTimeout(function () {
             $(".mainBigContainer").load("profile.html .profContainer", function () {
@@ -99,16 +99,16 @@ $(document).ready(function() {
                         marginTop: "0px",
                     });
                 }, 20);
-                $("#ProfBtn").addClass("active");
+                $("#ProfBtn , #ProfBtn2").addClass("active");
                 $(".TMLoc").html("پروفایل")
             });
         }, 150);
     });
 
-    $(document).on("click", "#SettBtn", function () {
+    $(document).on("click", "#SettBtn , #SettBtn2", function () {
         $(".mainBigContainer").css('opacity', '0');
-        $(".BMenuBtn").removeClass("active");
-        $("#SettBtn").addClass("active");
+        $(".BMenuBtn , .sideBarSingleBtn").removeClass("active");
+        $("#SettBtn , #SettBtn2").addClass("active");
         history.pushState(null, '', "setting.html");
         setTimeout(function () {
             $(".mainBigContainer").load("setting.html .settingContainer", function () {
@@ -123,16 +123,16 @@ $(document).ready(function() {
                         marginTop: "0px",
                     });
                 }, 20);
-                $("#SettBtn").addClass("active");
+                $("#SettBtn , #SettBtn2").addClass("active");
                 $(".TMLoc").html("تنظیمات")
             });
         }, 150);
     });
 
-    $(document).on("click", "#PointBtn", function () {
+    $(document).on("click", "#PointBtn , #PointBtn2", function () {
         $(".mainBigContainer").css('opacity', '0');
-        $(".BMenuBtn").removeClass("active");
-        $("#PointBtn").addClass("active");
+        $(".BMenuBtn , .sideBarSingleBtn").removeClass("active");
+        $("#PointBtn , #PointBtn2").addClass("active");
         history.pushState(null, '', "points.html");
         setTimeout(function () {
             $(".mainBigContainer").load("points.html .pointContainer", function () {
@@ -152,7 +152,7 @@ $(document).ready(function() {
                     animatePointProgress();
             
                     // Set page title
-                    $("#PointBtn").addClass("active");
+                    $("#PointBtn , #PointBtn2").addClass("active");
                     $(".TMLoc").html("امتیاز ها");
                 }, 20);
             });
