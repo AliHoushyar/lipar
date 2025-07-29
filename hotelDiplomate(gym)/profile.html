@@ -175,15 +175,70 @@
             </div>
             <div class="profBDLDown">
               <div class="profBDLDTop">
-                <button class="profBDLDTBtn fadingRow">
+                <button id="depositDeskBtn" class="profBDLDTBtn fadingRow">
                   <img src="./img/diposit.png" alt="" />
                 </button>
-                <button class="profBDLDTBtn fadingRow">
+                <button id="withdrawDeskBtn" class="profBDLDTBtn fadingRow">
                   <img src="./img/withdraw.png" alt="" />
                 </button>
               </div>
               <button class="profBDLDTDBtn fadingRow">مشاهده کیف پول</button>
             </div>
+          </div>
+        </div>
+        <div id="depositSubMenu" class="subMenuCont">
+          <div class="subMenuTxts">
+            <span id="subMenuTitle">واریز</span>
+            <button id="subMenuCloseBtn"><i class="bx bx-x"></i></button>
+          </div>
+          <div class="pSubMenuMainCont">
+            <div class="pSMMCOffer">
+              <span class="pSMMCOfferTitle">مبالغ پیشنهادی</span>
+              <div class="pSMMCOBtns">
+                <div class="pSMMCOBSingle">100,000 تومان</div>
+                <div class="pSMMCOBSingle">200,000 تومان</div>
+                <div class="pSMMCOBSingle">500,000 تومان</div>
+                <div class="pSMMCOBSingle">1,000,000 تومان</div>
+              </div>
+            </div>
+            <div class="pSMMCChoose">
+              <span class="pSMMCOfferTitle">مبلغ دلخواه</span>
+              <input
+                id="pSMMCCInp"
+                type="text"
+                placeholder="در صورت پر کردن این فیلد مبلغ پیشنهادی انتخاب شده لحاظ نمی‌شود"
+              />
+            </div>
+            <div class="pSMMCWay">
+              <span class="pSMMCOfferTitle">روش پرداخت</span>
+              <div class="pSMMCWayCont">
+                <div class="pSMMCWSingle">
+                  <img src="./img/behDesk.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <button class="pSMMCBtn">تایید و ادامه</button>
+          </div>
+        </div>
+        <div id="withdrawSubMenu" class="subMenuCont">
+          <div class="subMenuTxts">
+            <span id="subMenuTitle">برداشت</span>
+            <button id="subMenuCloseBtn"><i class="bx bx-x"></i></button>
+          </div>
+          <div class="pSubMenuMainCont">
+            <div class="pSMMCChoose">
+              <span class="pSMMCOfferTitle">شماره کارت</span>
+              <input
+                id="pSMMCCInp"
+                type="text"
+                placeholder="**** **** **** ****"
+              />
+            </div>
+            <div class="pSMMCChoose">
+              <span class="pSMMCOfferTitle">مبلغ مورد نظر جهت برداشت</span>
+              <input id="pSMMCCInp" type="text" placeholder="100,000" />
+            </div>
+            <button id="withDrawSubBtn" class="pSMMCBtn">تایید و ادامه</button>
           </div>
         </div>
       </div>

@@ -129,6 +129,32 @@ $(document).ready(function() {
         }, 150);
     });
 
+    $(document).on("click", "#inviteBtn2", function () {
+        $(".mainBigContainer").css('opacity', '0');
+        $(".BMenuBtn , .sideBarSingleBtn").removeClass("active");
+        $("#inviteBtn2").addClass("active");
+        history.pushState(null, '', "invite.html");
+        setTimeout(function () {
+            $(".mainBigContainer").load("invite.html .mainInvDesk", function () {
+                $(".fadingRow").css({
+                    opacity: 0,
+                    marginTop: "20px",
+                });
+                $(".mainBigContainer").css("opacity", "1");
+            
+                setTimeout(function () {
+                    $(".fadingRow").css({
+                        opacity: 1,
+                        marginTop: "0px",
+                    });
+                    animatePointProgress();
+                    $("#inviteBtn2").addClass("active");
+                    $(".TMLoc").html("دعوت از دوستان");
+                }, 20);
+            });
+        }, 150);
+    });
+
     $(document).on("click", "#PointBtn , #PointBtn2", function () {
         $(".mainBigContainer").css('opacity', '0');
         $(".BMenuBtn , .sideBarSingleBtn").removeClass("active");
@@ -408,6 +434,47 @@ $(document).ready(function() {
                 }, 20);
                 $(".TMLoc").html("برداشت")
             });
+        }, 150);
+    });
+
+    $(document).on("click", "#restMainBTN", function () {
+        $("#homeSubMenu").css('display', 'flex');
+        setTimeout(function () {
+            $("#homeSubMenu").css('opacity','1')
+            $("#homeSubMenu").css('transform','translate(50%, -50%)')
+        }, 150);
+    });
+
+    $(document).on("click", "#subMenuCloseBtn", function () {
+        $("#homeSubMenu , #depositSubMenu , #withdrawSubMenu , #historySubMenu").css('opacity','0')
+        $("#homeSubMenu , #depositSubMenu , #withdrawSubMenu , #historySubMenu").css('transform','translate(50%, -60%)')
+        setTimeout(function () {
+            $("#homeSubMenu , #depositSubMenu , #withdrawSubMenu , #historySubMenu").css('display', 'none');
+        }, 150);
+    });
+
+    $(document).on("click", "#depositDeskBtn", function () {
+        $("#depositSubMenu").css('display', 'flex');
+        $(".subMenuCont").css('pointer-event', 'none');
+        setTimeout(function () {
+            $("#depositSubMenu").css('opacity','1')
+            $("#depositSubMenu").css('transform','translate(50%, -48%)')
+        }, 150);
+    });
+
+    $(document).on("click", "#withdrawDeskBtn", function () {
+        $("#withdrawSubMenu").css('display', 'flex');
+        setTimeout(function () {
+            $("#withdrawSubMenu").css('opacity','1')
+            $("#withdrawSubMenu").css('transform','translate(50%, -48%)')
+        }, 150);
+    });
+
+    $(document).on("click", "#historyBTN", function () {
+        $("#historySubMenu").css('display', 'flex');
+        setTimeout(function () {
+            $("#historySubMenu").css('opacity','1')
+            $("#historySubMenu").css('transform','translate(50%, -50%)')
         }, 150);
     });
 

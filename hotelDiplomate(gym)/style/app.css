@@ -2802,3 +2802,427 @@ button.active .sideBarBtnShad {
     background-color: #ffffff;
     color: #00abe1;
 }
+
+.subMenuCont{
+    width: 600px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    opacity: 0;
+    display: none;
+    transform: translate(50%, -60%);
+    transition: all 250ms ease-in-out;
+}
+
+#depositSubMenu , #withdrawSubMenu{
+    height: 500px;
+}
+
+#historySubMenu{
+    width: 800px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.subMenuTxts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subMenuTxts button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 24px;
+}
+
+#subMenuTitle{
+    font-size: 18px;
+}
+
+.subMenuButtins{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.subMenuSingleBtn{
+    width: 30%;
+    height: 100%;
+    border-radius: 15px;
+    position: relative;
+}
+
+.subMenuSingleBtn img{
+    width: 100%;
+    height: 100%;
+}
+
+.subMenuBtnTitle{
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    width: 60%;
+    height: 40px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 15px 0;
+    gap: 3px;
+    transition: all 250ms ease-in-out;
+}
+
+.subMenuBtnTitle i{
+    font-size: 20px;
+    color: #00abe1;
+}
+
+.subMenuSingleBtn:hover{
+    .subMenuBtnTitle{
+        width: 80%;
+        height: 120px;
+        font-size: 24px;
+    }
+}
+
+.pSubMenuMainCont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    gap: 25px;
+}
+
+.pSMMCOffer , .pSMMCChoose , .pSMMCWay{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pSMMCOfferTitle{
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+    color: #a1a1a1;
+    font-weight: bold;
+}
+
+.pSMMCOBtns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.pSMMCOBSingle{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00abe1;
+    border: 1px solid #00abe1;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.pSMMCOBSingle:hover{
+    border: 1px solid #ffffff;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.pSMMCOBSingle.active{
+    background-color: #00abe1;
+    color: #ffffff;
+}
+
+#pSMMCCInp{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'shabnam';
+    border-radius: 7px;
+}
+
+#pSMMCCInp:focus{
+    outline: none;
+}
+
+.pSMMCWayCont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.pSMMCWSingle{
+    width: 30%;
+    height: 60px;
+    border: 1px solid #00abe1;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.pSMMCWSingle img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.pSMMCBtn{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 25px;
+    background-color: #00abe1;
+    color: #ffffff;
+}
+
+#withDrawSubBtn{
+    margin-top: 155px;
+}
+
+.pointDeskTop{
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    height: 215px;
+}
+
+.pointDeskTop img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.pointDeskMain{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pointDMTop{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pointDMTRight{
+    width: 64%;
+    height: 180px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    padding: 15px;
+}
+
+.pointDMTLeft{
+    width: 34.5%;
+    height: 180px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pointDMTRTitle{
+    font-size: 14px;
+    font-weight: bold;
+    color: #a1a1a1;
+}
+
+.pointDMTRdivs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.pointDMTRDSingle{
+    width: 15%;
+    height: 100px;
+    background-color: #00abe1;
+    border-radius: 15px;
+    position: relative;
+}
+
+.pointDMTRDSingle img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.pointDMTRDSTitle{
+    position: absolute;
+    width: 70%;
+    height: 30px;
+    background-color: #ffffff;
+    font-size: 12px;
+    bottom: -1px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px 0 12px 0;
+    color: #1166a8;
+}
+
+.withBgI{
+    background-image: url(../img/testBan.png);
+    background-size: cover;
+}
+
+.pointProgreeCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.pointProgressCircle {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+
+.pointProgressCircle svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.pointProgressCircle circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.progressBgCircle {
+    stroke: #177fe033;
+}
+
+.progressMainCircle {
+    stroke: #177fe0cc;
+    stroke-dasharray: 282.6;
+    stroke-dashoffset: 141.3; /* 50% progress */
+    transition: stroke-dashoffset 1s;
+}
+
+.progressContTxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #00abe1;
+}
+
+.progressContTxt div {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.progressContTxt span {
+    font-size: 12px;
+}
+
+.pointChoose{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: -5px;
+}
+
+.pointChooseImgs{
+    width: 200%;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    transition: all 500ms ease-in-out;
+}
+
+.pointChooseImgSingle{
+    height: 70px;
+    opacity: 0.3;
+    transition: all 500ms ease-in-out;
+}
+
+.pointChooseImgSingle.active{
+    height: 110px;
+    opacity: 1;
+}
+
+.pointChooseTxt{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pointChooseTxt button{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.historyTable{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.historySingleRow{
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    background-color: #00abe1;
+}

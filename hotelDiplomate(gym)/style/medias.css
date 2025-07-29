@@ -42,7 +42,7 @@
     /* HOME */
 
     .bottomMenu , .topMenu , .settingTop , .settingMainContainer , .topSiteBanners 
-    , .khadamatAndBanner , .invContaoner{
+    , .khadamatAndBanner , .invContaoner , .topprofcont , .pointProgress , .pointUse{
         display: none;
     }
 
@@ -55,6 +55,10 @@
 
     .homeContainer , .profContainer , .walletContainer , .settingContainer{
         padding-top: 15px;
+    }
+
+    .pointContainer{
+        padding-top: 0;
     }
 
     /* @ PROFILE @ */
