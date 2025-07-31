@@ -1,0 +1,12 @@
+@media (min-width: 1200px) {
+    .homeCatagories , .homeBanner , .topLogoCont , .bottonMenu
+    , .topImg , .mainMenuCountainer{
+        display: none;
+    }
+}
+
+@media (max-width: 728px) {
+    .deskTopCont , .deskGridCont{
+        display: none;
+    }
+}

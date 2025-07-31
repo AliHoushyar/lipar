@@ -5,7 +5,7 @@ $(document).ready(function() {
     // Click handlers
     $('#BMBTN2').click(function() {
         $('.topContainer').empty();
-        $('.topContainer').load("./menu.html");
+        $('.topContainer').load("menu.html .loadedContainer");
         $('.selectorMenu').css('right', '123px');
         $('.bottonMenuSingle').removeClass("active");
         $('#BMBTN2').addClass("active");
@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     $('#BMBTN1').click(function() {
         $('.topContainer').empty();
-        $('.topContainer').load("./home2.html");
+        $('.topContainer').load("home.html .loadedContainer");
         $('.selectorMenu').css('right', '10px');
         $('.bottonMenuSingle').removeClass("active");
         $('#BMBTN1').addClass("active");
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
     $('#BMBTN3').click(function() {
         $('.topContainer').empty();
-        $('.topContainer').load("./cart.html");
+        $('.topContainer').load("cart.html .loadedContainer");
         $('.selectorMenu').css('right', '253px');
         $('.bottonMenuSingle').removeClass("active");
         $('#BMBTN3').addClass("active");
