@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="topContainer">
-      <div class="loadedContainer">
+      <div style="position: relative" class="loadedContainer">
         <div class="topImg">
           <img src="./img/bg2.jpg" alt="" />
         </div>
@@ -177,7 +177,7 @@
           </div>
         </div>
         <div class="menuCatagories">
-          <button class="menuCatBtn">
+          <button class="menuCatBtn active">
             <img src="./img/bowlicon.png" alt="" />
             <span>ایرانی</span>
           </button>
@@ -185,12 +185,160 @@
             <img src="./img/fastIcon.png" alt="" />
             <span>فست فود</span>
           </button>
-          <button class="menuCatBtn">کبابی</button>
-          <button class="menuCatBtn">پیتزا</button>
-          <button class="menuCatBtn">برگر</button>
-          <button class="menuCatBtn">ساندویچ</button>
-          <button class="menuCatBtn">کنتاکی</button>
-          <button class="menuCatBtn">لیالی و بریانی</button>
+          <button class="menuCatBtn">
+            <img src="./img/kebabicon.png" alt="" />
+            <span>کبابی</span>
+          </button>
+          <button class="menuCatBtn">
+            <img src="./img/pizzaicon.png" alt="" />
+            <span>پیتزا</span>
+          </button>
+          <button class="menuCatBtn">
+            <img src="./img/burgericon.png" alt="" />
+            <span>برگر</span>
+          </button>
+          <button class="menuCatBtn">
+            <img src="./img/kentakiicon.png" alt="" />
+            <span>کنتاکی</span>
+          </button>
+          <button class="menuCatBtn">
+            <img src="./img/sandicon.png" alt="" />
+            <span>ساندویچ</span>
+          </button>
+          <button class="menuCatBtn">
+            <img src="./img/beryanicon.png" alt="" />
+            <span>بریانی و بعلبکی</span>
+          </button>
+          <button class="menuCatBtn">
+            <img src="./img/cocaicon.png" alt="" />
+            <span>نوشیدنی</span>
+          </button>
+          <button class="menuCatBtn">
+            <img src="./img/saladicon.png" alt="" />
+            <span>سرویس</span>
+          </button>
+        </div>
+        <div class="mainMenuAndCart">
+          <div class="mainCartContainer">
+            <div class="mainCartTop">
+              <span>سفارش شما</span>
+              <button class="submitSegfaresh">تایید سفارش</button>
+            </div>
+            <div class="mainCartOrders">
+              <div class="emptyOrder">
+                <img src="./img/emptyorder.png" alt="" />
+                <span>هنوز سفارشی ثبت نکردید</span>
+              </div>
+              <div class="cartOrderSingle">
+                <div class="cartOrderSingleRight">
+                  <img src="./img/kebabicon.png" alt="" />
+                  <span>جوجه کباب</span>
+                </div>
+                <button class="singleOrderDel">
+                  <i class="bx bx-x"></i>حذف
+                </button>
+              </div>
+              <div class="cartOrderSingle">
+                <div class="cartOrderSingleRight">
+                  <img src="./img/cocaicon.png" alt="" />
+                  <span>نوشابه خانواده مشکی</span>
+                </div>
+                <button class="singleOrderDel">
+                  <i class="bx bx-x"></i>حذف
+                </button>
+              </div>
+            </div>
+            <div class="mainCartPrice">
+              <div class="mainCartPriceVal">
+                <span class="maincartPriceValTitle">قیمت نهایی سفارش</span>
+                <span class="mainCartPriceValueSec"
+                  ><span class="mainCartPriceValue">1,500,000</span>تومان</span
+                >
+              </div>
+              <div class="mainCartPriceBtn">
+                <button class="mainCartPriceBtnSingle">اعمال کد تخفیف</button>
+                <button class="mainCartPriceBtnSingle">جزئیات فاکتور</button>
+              </div>
+            </div>
+            <div class="mainCartWaySend">
+              <div class="mainCartSendSingle">
+                <img src="./img/delivericon.png" alt="" />
+                <span>ارسال به ادرس</span>
+              </div>
+              <div class="mainCartSendSingle">
+                <img src="./img/inresticon.png" alt="" />
+                <span>تحویل در رستوران</span>
+              </div>
+            </div>
+          </div>
+          <div class="listMenuCont">
+            <div class="listMenuSection">
+              <div class="listMenuSecTitle">
+                <div class="listMenuSecTitleLine"></div>
+                <span class="listMenuSecTitleTxt">ایرانی</span>
+              </div>
+              <div class="listMenuMainContainer">
+                <div class="listMenuMainsingle">
+                  <img
+                    class="listMenuSingleImg"
+                    src="./img/sampleProd.png"
+                    alt=""
+                  />
+                  <div class="listMenuSingleTxt">
+                    <span class="listMSTTitle">چیز برگر مخصوص بزرگ</span>
+                    <div class="listMSTTags">
+                      <div class="listMSTTagsSingle">
+                        <span>فست فود</span>
+                      </div>
+                      <div class="listMSTTagsSingle">
+                        <span>برگر</span>
+                      </div>
+                    </div>
+                    <span class="listMSTDesc"
+                      >برگر 150 گرمی، پنیر چدار، کاهو، گرجه، خیارشور، پیاز، سس
+                      مخصوص</span
+                    >
+                    <div class="listMSTPrice">
+                      <button class="listMSTPriceBtn">
+                        <i class="bx bx-plus"></i>افزودن
+                      </button>
+                      <span class="listMSTPriceVal"
+                        ><span>450,000</span>تومان</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="listMenuMainsingle TEMP">
+                  <img class="TempImg" src="./img/TEMPIMG.jpg" alt="" />
+                  <div class="listMenuSingleTxt TEMPTXT">
+                    <span class="listMSTTitle">چیز برگر مخصوص بزرگ</span>
+                    <div class="listMSTTags">
+                      <div class="listMSTTagsSingle">
+                        <span>فست فود</span>
+                      </div>
+                      <div class="listMSTTagsSingle">
+                        <span>برگر</span>
+                      </div>
+                    </div>
+                    <span class="listMSTDesc"
+                      >برگر 150 گرمی، پنیر چدار، کاهو، گرجه، خیارشور، پیاز، سس
+                      مخصوص</span
+                    >
+                    <div class="listMSTPrice">
+                      <button class="listMSTPriceBtn">
+                        <i class="bx bx-plus"></i>افزودن
+                      </button>
+                      <span class="listMSTPriceVal"
+                        ><span>450,000</span>تومان</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="listMenuMainsingle"></div>
+                <div class="listMenuMainsingle"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
