@@ -6,7 +6,7 @@
 }
 
 @media (max-width: 728px) {
-    .deskTopCont , .deskGridCont{
+    .deskTopCont , .deskGridCont, .navbarMenu, .menuCatagories, .mainMenuAndCart{
         display: none;
     }
 }

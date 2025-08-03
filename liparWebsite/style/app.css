@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'zeytoon';
+    src: url('../fonts/Zeytoon.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'shabnam';
+    src: url('../fonts/Shabnam-FD.woff2') format('opentype');
+}
+
+@font-face {
+    font-family: 'fani';
+    src: url('../fonts/Far.Fanni.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'fanavari';
+    src: url('../fonts/Fanavari\ Regular.ttf') format('opentype');
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "shabnam", sans-serif;
+    background-color: #ffffff;
+    position: relative;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.siteTop{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.siteTopBgImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.navbar{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    padding-top: 15px;
+}
+
+.navLogo{
+    height: 60px;
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+
+.navLinks a{
+    font-size: 18px;
+    font-family: 'fani';
+    color: #ffffff;
+}
+
+.siteTopTxt{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 60px;
+    padding-top: 100px;
+}
+
+.siteTopTxt h1{
+    font-size: 120px;
+    color: #ecd2ff;
+    font-weight: normal;
+    text-shadow: 0px 5px 0px #ac02df;
+    font-family: 'fanavari';
+}
+
+.siteTopTxt p{
+    font-size: 18px;
+    color: #cab5ed;
+    text-shadow: 2px 2px 5px #ac02df84;
+    width: 90%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.siteTopTxtButton{
+    width: 90%;
+    height: 40px;
+    border: 1px solid #9608d5;
+    color: #c234ff;
+    font-size: 14px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    transition: all 250ms ease-in-out;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.siteTopTxtButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(209, 102, 252, 0.3),
+        transparent
+    );
+    transition: left 0.5s ease;
+}
+
+.siteTopTxtButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(249, 102, 252, 0.3);
+}
+
+.siteTopTxtButton:hover::before {
+    left: 100%;
+}
+
+.aboutSec{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.aboutBg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+
+.aboutMainTxt{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 35px;
+    margin-right: 160px;
+}
+
+.aboutMainTitle{
+    font-size: 32px;
+    margin-top: 180px;
+}
+
+.aboutMainDesc{
+    width: 55%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.aboutBtnCont{
+    width: 55%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutBtnSingle{
+    width: 46%;
+    height: 50px;
+    text-align: center;
+    background-color: #9608d5;
+    color: #ffffff;
+    border-radius: 15px;
+    transition: all 250ms ease-in-out;
+}
+
+.aboutBtnSingle.outline{
+    background-color: transparent;
+    border: 1px solid #9608d5;
+    color: #9608d5;
+}
+
+.aboutBtnSingle:hover{
+    transform: translateY(-3px);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.khadamatSec{
+    width: 100%;
+    height: 100vh;
+    padding: 25px;
+}
+
+.khadamtSectitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.khadamatSecTitleMain{
+    font-size: 24px;
+}
+
+.khadamatSecSeprator{
+    width: 100%;
+    height: 1px;
+    background-color: #c8c8c8;
+}
+
+.khadamntMaincard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.khadamatMainCardSingle{
+    width: calc(100% / 4.2);
+    height: 77vh;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.khadamatMainCardIcon{
+    width: 100%;
+    height: 100%;
+}
+
+.khadamatMainCardTxt{
+    width: 80%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 240px;
+    text-align: center;
+    color: #8d8d8d;
+}
