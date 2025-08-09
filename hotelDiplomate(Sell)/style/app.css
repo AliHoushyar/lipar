@@ -31,6 +31,11 @@ a{
     src: url('../fonts/Shabnam-FD.woff2') format('opentype');
 }
 
+@font-face {
+    font-family: 'fani';
+    src: url('../fonts/Far.Fanni.ttf') format('opentype');
+}
+
 .bigBG{
     width: 100%;
     height: 100vh;
@@ -46,7 +51,7 @@ a{
     width: 300px;
 }
 
-.wBtn{
+/* .wBtn{
     width: 250px;
     height: 40px;
     background-color: transparent;
@@ -55,11 +60,45 @@ a{
     border-radius: 15px;
     margin-top: 25px;
     box-shadow: #af894f7d 3.95px 2.95px 2.6px;
+} */
+
+.languageBtns{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.languageBtnSingle{
+    width: 250px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: #af894f7d 3.95px 2.95px 2.6px;
+}
+
+.languageBtnSingle img{
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+
+.languageBtnSingle span{
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'shabnam';
 }
 
 .seprator{
     width: 70%;
-    margin-top: 45px;
+    margin-top: 25px;
 }
 
 .socials{
@@ -205,52 +244,6 @@ a{
     justify-content: center;
 }
 
-.bottonMenu{
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: #f5f4f7;
-    z-index: 4;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.bottonMenuSingle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    transition: all 250ms ease-in-out;
-}
-
-.bottonMenuSingle i{
-    font-size: 20px;
-}
-
-.bottonMenuSingle span{
-    font-size: 12px;
-}
-
-.bottonMenuSingle.active{
-    color: #af884f;
-}
-
-.selectorMenu{
-    position: absolute;
-    top:0;
-    right: 123px;
-    width: 100px;
-    height: 3px;
-    background-color: #af884f;
-    border-radius: 2px;
-    transition: all 250ms ease-in-out;
-}
-
 .menuType{
     max-width: 100%;
     height: 40px;
@@ -352,51 +345,38 @@ a{
     border-radius: 25px;
 }
 
-.homeCatagories{
-    width: 100%;
-    padding: 15px;
-}
-
-.HCTtxt{
+.homeCatagoire{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+    row-gap: 15px;
 }
 
-.HCTtxt a{
-    color: #af884f;
-    font-size: 14px;
-}
-
-.HCMain{
-    max-width: 100%;
-    overflow: scroll;
-    white-space: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 15px;
-}
-
-.HCSingle{
-    min-width: 120px;
+.homeCatagoireSingle{
+    width: 48%;
     height: 150px;
-    border: 1px solid #dddddd;
+    background-color: #020331;
     border-radius: 25px;
-    padding: 7px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 14px;
-    gap: 7px;
+    justify-content: center;
+    border: none;
+    gap: 12px;
 }
 
-.HCSingle img{
-    width: 100%;
+.homeCatagoireSingle img{
+    width: 55%;
+}
+
+.homeCatagoireSingle span{
+    font-size: 24px;
+    color: #af884f;
+    font-family: 'fani';
+    text-shadow: 2px 2px 0px #7a1025;
 }
 
 /* ----------------- */

@@ -1,5 +1,5 @@
 @media (min-width: 1200px) {
-    .homeCatagories , .homeBanner , .topLogoCont , .bottonMenu
+    .homeCatagoire , .homeBanner , .topLogoCont , .bottonMenu
     , .topImg , .mainMenuCountainer{
         display: none;
     }

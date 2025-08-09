@@ -1,0 +1,139 @@
+.contactContainer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.contactContBG{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mainContactForm{
+    position: absolute;
+    width: 85%;
+    height: 80%;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.contactUsSocial{
+    width: 6%;
+    height: 200px;
+    background: linear-gradient(0deg,#672cc0 50%, #a517c3 100%);
+    border-radius: 0 15px 30px 0;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contactUsMainForm{
+    width: 94%;
+    height: 100%;
+    background-color: #f0f8ff;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactSocialLink{
+    width: 40px;
+    height: 40px;
+}
+
+.contactSocialLink img{
+    width: 100%;
+    height: 100%;
+}
+
+.contactUsMainFormInp{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.contactUsMainFormInpTxt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    color: #a1a1a1;
+}
+
+.contactUsMFITTitle{
+    font-size: 26px;
+    font-family: 'fani';
+    color: #8422c1;
+}
+
+.contactUsMainFormInpCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.contactUsMainFormInpCont input{
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding-right: 15px;
+    font-family: 'shabnam';
+    font-size: 16px;
+}
+
+.contactUsMainFormInpCont textarea{
+    width: 100%;
+    height: 180px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 15px;
+    resize: none;
+    padding: 15px;
+    font-family: 'shabnam';
+    font-size: 16px;
+}
+
+.contactUsMainFormInpCont button{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    background: linear-gradient(225deg,#a516c3 0%, #662cbf 100%);
+    font-family: 'shabnam';
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.contactUsMainFormImg{
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.contactUsMainFormImg img{
+    width: 100%;
+    height: 100%;
+}

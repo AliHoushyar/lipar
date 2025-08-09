@@ -41,6 +41,10 @@ a{
     text-decoration: none;
 }
 
+button{
+    font-family: 'shabnam';
+}
+
 .siteTop{
     width: 100%;
     height: 100vh;
@@ -277,94 +281,201 @@ a{
     color: #8d8d8d;
 }
 
-.footer{
+/* Footre Section */
+
+.footerSec{
     width: 100%;
-    height: 50vh;
-    background-color: #060427;
+    height: 100vh;
+    background-color: #2e1e43;
+    position: relative;
 }
 
-.softWareCardContainer{
+.footBG{
+    position: absolute;
     width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.footLogo{
+    width: 250px;
+}
+
+.footSocials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    right: 50%;
+    top: 5%;
+    transform: translateX(50%);
+    z-index: 2;
+}
+
+.footSocialBtnCont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.singleSocialBtn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
+    background-color: #2e1e43;
+}
+
+.singleSocialBtn img{
+    width: 95%;
+    z-index: 4;
+    border-radius: 7px;
+}
+
+.socialBtnBg{
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    background-color: #9608d5;
+    z-index: 3;
+    top: -80px;
+    left: -80px;
+    transform: rotateZ(45deg);
+    transition: all 500ms ease-in-out;
+}
+
+.singleSocialBtn:hover{
+    .socialBtnBg{
+        top: -12px;
+        left: -12px;
+    }
+}
+
+.footLinks{
+    position: absolute;
+    right: 50%;
+    width: 55%;
+    transform: translateX(50%);
+    top: 35%;
     display: flex;
     align-items: start;
     justify-content: space-between;
-    padding: 25px;
-    flex-wrap: wrap;
-    row-gap: 45px;
-    background-color: #fbfcfc;
+    z-index: 3;
 }
 
-.softWareCardSingle{
-    width: calc(100%/3.2);
-    height: 450px;
-    background-color: #ffffff;
-    border-radius: 45px;
-    padding: 20px;
-    box-shadow: rgba(203, 203, 203, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+.footLinksSec{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.footLinkSecTitle{
+    color: #ffffff;
+    font-family: 'fani';
+    font-size: 20px;
+}
+
+.footLinlsSecMain{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+.footLinlsSecMain a{
+    color: #ffffff;
+}
+
+.footBanner{
+    position: absolute;
+    z-index: 3;
+    width: 55%;
+    height: 80px;
+    background-image: url(../img/footBanner.jpg);
+    background-size: cover;
+    right: 50%;
+    transform: translateX(50%);
+    top: 67%;
+    border-radius: 25px;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: start;
+}
+
+.footBannerForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+}
+
+.footBannerForm input{
+    height: 30px;
+    border: none;
+    font-family: 'shabnam';
+    border-radius: 0 10px 10px 0;
+    font-size: 14px;
+    width: 386px;
+    padding-right: 15px;
+}
+
+.footBannerForm button{
+    height: 30px;
+    background-color: #2e1e43;
+    color: #ffffff;
+    width: 163px;
+    border-radius: 10px 0 0 10px;
+}
+
+.footerNamads{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    position: absolute;
+    z-index: 3;
+    bottom: 2%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.singleFootNamad{
+    width: 120px;
+}
+
+.singleFootNamad img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.footerNamadCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 15px;
 }
 
-.softWareSinglImg{
-    width: 100%;
-    height: 250px;
-    border-radius: 25px;
-    background-color: #9608d5;
-}
-
-.softWareSingTxt{
-    width: 100%;
+.footerLocPhone{
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 7px;
-    padding-right: 3px;
-}
-
-.softWareSingTxtTitle{
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.softWareSingTxtDesc{
-    font-size: 16px;
-    color: #a1a1a1;
-}
-
-.softWareSingPrice{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 7px;
-}
-
-.softWareSingPriceVal{
-    font-size: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.softWareSingPriceValCur{
-    font-size: 16px;
-    margin-top: 5px;
-}
-
-.softWareSingPriceBtn{
-    width: 200px;
-    height: 50px;
-    color: white;
-    border-radius: 15px;
-    background-color: #454448;
-    transition: all 250ms ease-in-out;
-}
-
-.softWareSingPriceBtn:hover{
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    gap: 15px;
+    margin-right: 15px;
+    font-size: 18px;
 }
