@@ -138,7 +138,7 @@ a{
 .mainMenuCountainer{
     width: 100%;
     min-height: 437px;
-    top: 230px;
+    top: 160px;
     position: relative;
     z-index: 2;
     background-color: #fffcfc;
@@ -149,7 +149,7 @@ a{
     align-items: center;
     justify-content: start;
     gap: 5px;
-    padding-bottom: 75px;
+    padding-bottom: 120px;
 }
 
 .menuContainer{
@@ -358,7 +358,7 @@ a{
 .homeCatagoireSingle{
     width: 48%;
     height: 150px;
-    background-color: #020331;
+    background-color: #ffffff;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -369,53 +369,17 @@ a{
 }
 
 .homeCatagoireSingle img{
-    width: 55%;
+    width: 65%;
 }
 
 .homeCatagoireSingle span{
-    font-size: 24px;
+    font-size: 20px;
     color: #af884f;
     font-family: 'fani';
-    text-shadow: 2px 2px 0px #7a1025;
+    /* text-shadow: 2px 2px 0px #080e3a; */
 }
 
 /* ----------------- */
-
-.cartContainer{
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding-bottom: 210px;
-}
-
-.TPrice{
-    width: 100%;
-    height: 140px;
-    position: fixed;
-    bottom: 59px;
-    background-color: #f5f4f7;
-    z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    padding: 15px;
-}
-
-.TPTxt{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 7px;
-}
-
-.singleTPTxt{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .STPNum{
     display: flex;
@@ -434,8 +398,60 @@ a{
     margin-top: 15px;
 }
 
-.bottonMenu.blank{
-    box-shadow: none;
+.bottonMenu{
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 0 15px;
+}
+
+.bottonMenuTxt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottonMenuTxtTed{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.bottonMenuTxtTedTitle{
+    font-size: 14px;
+    color: #7a7a7a;
+    font-weight: bold;
+}
+
+.bottonMenuTxtTedMain{
+    font-size: 24px;
+    font-weight: bold;
+    color: #080e3a;
+}
+
+.bottonMenuTxtTedSub{
+    font-size: 14px;
+    color: #080e3a;
+}
+
+.bottonMenuBtn{
+    width: 100%;
+    height: 40px;
+    background-color: #080e3a;
+    color: #ffffff;
+    border-radius: 7px;
+    font-family: 'shabnam';
 }
 
 .deskTopCont{
@@ -1066,4 +1082,348 @@ a{
 .TEMPTXT{
     padding-top: 0;
     height: 60%;
+}
+
+.foodBtnAfter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    display: none;
+}
+
+.foodBtnAfter button{
+    width: 38px;
+    height: 37px;
+    background-color: #D7D9EB;
+    color: #080e3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'shabnam';
+}
+
+.foodBtnAfterTxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.mobCartContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.mobCartContainerTop{
+    width: 100%;
+    height: 100px;
+    background-color: #080e3a;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.mobCartContainerTopRes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 45px;
+}
+
+.mobCartContainerTopRes img{
+    width: 90%;
+}
+
+.resTopMob{
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    right: 0;
+}
+
+.resTopMobLogo{
+    width: 70px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.mobCartContainerTopFoods{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 7px;
+    font-size: 14px;
+}
+
+.mobCartContainerTopFoodsSingle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.mobCartContainerTopFoodsSingleName , .mobCartContainerTopFoodsSingleQUentity{
+    width: 25%;
+    text-align: right;
+}
+
+.mobCartContainerTopFoodsSinglePriceCont{
+    width: 50%;
+    text-align: center;
+}
+
+.mobCartContainerTopFoodsSingleSep{
+    width: 100%;
+    height: 2px;
+    background-color: #e1e1e1;
+}
+
+.mobCartContainerTopTable{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.mobCartContainerTableBottomSingle{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 49px;
+    font-size: 12px;
+    padding-right: 0;
+}
+
+.mobCartContainerTableBottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.mobCartContainerTableBottomSingleCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 84px;
+}
+
+.mobCartContainerTableBottomSingleCur , .mobCartContainerTopFoodsSinglePriceCur{
+    font-size: 10px;
+}
+
+.mobCartContainerTableBottomSingleVal{
+    font-size: 14px;
+}
+
+.mobCartContainerTableBottomSingle.bolded{
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 40px;
+    margin-top: 5px;
+}
+
+.mobCartContainerTableBottomSingleVal.cost{
+    font-size: 16px;
+}
+
+.mobCartContainerTableBottomSingleCur.cost{
+    font-size: 14px;
+}
+
+.mobCartContainerTableBottomSingleCont.cost{
+    width: 100px;
+}
+
+.mobCartContainerTopRes.bottom{
+    margin-top: 15px;
+}
+
+.cartBottom{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #e9ebff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cartBottomTop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartBottomTopVal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartBottomBtns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartBottomBtnsSingle{
+    width: 48%;
+    height: 40px;
+    border: none;
+    background-color: #080e3a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    font-family: 'shabnam';
+}
+
+.cartBottomBtnsSingle.border{
+    border: 1px solid #080e3a;
+    background-color: transparent;
+    color: #080e3a;
+}
+
+.loginContainer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.loginContainerBG{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mainLogCont{
+    width: 100%;
+    height: 70%;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 25px;
+}
+
+.loginContainerLogo{
+    width: 120px;
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.mainLogContTitle{
+    font-size: 32px;
+    font-family: 'fani';
+    color: #080e3a;
+}
+
+.mainLogContSub{
+    text-align: center;
+    margin-top: 7px;
+}
+
+.mainLogContForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.mainLogContForm input{
+    width: 100%;
+    height: 40px;
+    padding-right: 15px;
+    font-family: 'shabnam';
+    border: 1px solid #080e3a;
+    border-radius: 7px;
+}
+
+.mainLogContForm button{
+    width: 100%;
+    height: 40px;
+    background-color: #080e3a;
+    color: #ffffff;
+    border-radius: 7px;
+    font-family: 'shabnam';
+    margin-top: 10px;
+}
+
+.mainLogContFormFor{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.mainLogContFormFor a{
+    text-decoration: none;
+    color: #080e3a;
+    font-size: 12px;
+}
+
+.topMenu{
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #080e3a;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 7px;
+    border: 3px solid #af884f;
+    box-shadow: rgb(0 0 0) 0px 5px 8px 4px
+}
+
+.topMenu span{
+    color: #ffffff;
+    font-size: 14px;
 }
