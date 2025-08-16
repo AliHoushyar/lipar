@@ -171,7 +171,6 @@ a{
     padding: 7px;
     padding-right: 12px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -179,21 +178,22 @@ a{
 
 .singleTop{
     width: 100%;
-    height: 70%;
+    height: 100%;
     border-radius: 15px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
 }
 
 .foodImg{
-    width: 120px;
+    width: 140px;
     height:100%;
     border-radius: 15px;
 }
 
 .foodTitle{
-    width: 62%;
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -209,7 +209,7 @@ a{
 }
 
 .foodBtn{
-    width: 120px;
+    width: 80px;
     height: 30px;
     margin-left: 7px;
     border-radius: 7px;
@@ -1088,13 +1088,13 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 7px;
     display: none;
 }
 
 .foodBtnAfter button{
-    width: 38px;
-    height: 37px;
+    width: 30px;
+    height: 30px;
     background-color: #D7D9EB;
     color: #080e3a;
     display: flex;
@@ -1426,4 +1426,27 @@ a{
 .topMenu span{
     color: #ffffff;
     font-size: 14px;
+}
+
+.languageBtnCont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.langBtnSingle{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 7px;
+    border: 1px solid #ffffff;
+}
+
+.langBtnSingle img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
 }
