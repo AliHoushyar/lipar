@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'azar';
+    src: url("../fonts/Azar.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'simpAr';
+    src: url("../fonts/simpfxo.ttf") format('opentype');
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'azar',sans-serif;
+}
+
+.menuContainer{
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+}
+
+.bgimg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.singleMenuSec{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.singleMenuSec.kebab{
+    width: 435px;
+    right: 31px;
+    top: 333px;
+}
+
+.singleMenuSec.khoresht{
+    width: 435px;
+    right: 31px;
+    bottom: 30px;
+}
+
+.singleMenuSec.sini{
+    width: 435px;
+    right: 500px;
+    top: 70px;
+}
+
+.singleMenuSec.irani{
+    width: 435px;
+    right: 500px;
+    top: 455px;
+}
+
+.singleMenuSec.appe{
+    width: 435px;
+    right: 970px;
+    top: 70px;
+}
+
+.singleMenuSec.des{
+    width: 435px;
+    right: 1440px;
+    top: 70px;
+}
+
+.singleMenuSecimg{
+    width: 100%;
+}
+
+.singleMenuSecMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.singleMenuSecMain.kebab{
+    margin-top: 8px;
+    gap: 2.5px;
+}
+
+.singleMenuSecMain.khoresht{
+    margin-top: 8px;
+    gap: 8px;
+}
+
+.singleMenuSecMain.sini{
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.singleMenuSecMain.irani{
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.singleMenuSecMain.appe{
+    margin-top: 10px;
+    gap: 11.5px;
+}
+
+.singleMenuSecMain.des{
+    margin-top: 7px;
+    gap: 4px;
+}
+
+.singleMenuSecMainSingle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.singleMenuSecMainSingleName{
+    color: #ffffff;
+    font-size: 36.5px;
+}
+
+.singleMenuSecMainSinglePrice{
+    color: #ffffff;
+    font-size: 34.5px;
+    font-family: 'simpAr';
+}
