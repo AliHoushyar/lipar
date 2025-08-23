@@ -1,0 +1,527 @@
+@font-face {
+    font-family: "shabnam";
+    src: url("../fonts/Shabnam-FD.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: "fanavari";
+    src: url("../fonts/Fanavari\ Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "fani";
+    src: url("../fonts/Far.Fanni.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "zeytoon";
+    src: url("../fonts/Zeytoon.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "ibrand";
+    src: url("../fonts/ibrand.otf") format("opentype");
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'shabnam',sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.webHeader{
+    width: 100%;
+    height: 200vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.webHeaderTop{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg,rgba(200, 213, 229, 1) 0%, rgba(247, 245, 248, 1) 100%);
+}
+
+.silverEarth{
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    transition: all 10ms ease-in-out;
+    z-index: 10;
+}
+
+.navbar{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.navbarBrand{
+    font-size: 52px;
+    font-family: 'ibrand';
+    color: #424a55;
+    text-align: left;
+    width: 100%;
+}
+
+.navbarMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.navbarMenu a{
+    color: #424a55;
+    font-family: 'fanavari';
+    font-size: 26px;
+    font-weight: bold
+}
+
+.navbarLogin{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.navbarLoginMain{
+    width: 160px;
+    height: 50px;
+    background: linear-gradient(45deg,#f2f3f7 0%, #b3b6bd 100%);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+.navbarLoginMainIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #424a55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarLoginMainIcon img{
+    width: 50%;
+}
+
+.navbarLoginMainTxt{
+    font-size: 16px;
+    color: #424a55;
+    text-align: center;
+}
+
+.headerTitle{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.headerTitleMain{
+    text-align: center;
+    color: #424a55;
+    font-size: 50px;
+    font-family: 'fani';
+}
+
+.headerTitleSub{
+    text-align: center;
+    font-family: 'fanavari';
+    color: #a5a9ac;
+    font-size: 32px;
+}
+
+.webHeaderbottom{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg,rgba(200, 213, 229, 1) 0%, rgba(247, 245, 248, 1) 50%);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.webHeaderbottomSec{
+    margin-right: 15%;
+    width: 350px;
+    height: 550px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    transform:
+        perspective(800px)
+        rotateY(25deg) 
+        translateY(-50px)
+        rotateX(10deg)
+        scale(0.6);
+    filter: blur(7px);
+    opacity: 0.5;
+    transition: all 500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+    padding: 25px;
+}
+
+.webHeaderbottomSec.show{
+    transform:
+        perspective(800px)
+        rotateY(-15deg)
+        translateY(-50px)
+        rotateX(10deg)
+        scale(1);
+    filter: none;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.webHeaderbottomSecTitle{
+    font-size: 24px;
+}
+
+.webHeaderbottomSecRow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+}
+
+.webHeaderbottomSecRow img{
+    width: 70px;
+    border-radius: 15px;
+}
+
+.webHeaderbottomSecRow span{
+    font-size: 18px;
+}
+
+.webHeaderbottomSecSub{
+    font-size: 16px;
+    color: #a5a9ac;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.aboutUs{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 50px;
+}
+
+.aboutUsimg{
+    width: 850px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) scale(0.7);
+    transition: all 500ms ease-in-out;
+    z-index: 2;
+}
+
+.aboutUsimg.show{
+    transform: translateY(-50%) scale(1);
+}
+
+.aboutUsbg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.aboutUsTxt{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 5%;
+}
+
+.aboutUsTxt h2{
+    font-size: 40px;
+    color: #424a55;
+}
+
+.aboutUsTxt span{
+    color: #a5a9ac;
+    width: 80%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.aboutUsTxtBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 80%;
+}
+
+.aboutUsTxtBtnSingle{
+    width: 49%;
+    height: 60px;
+    border: none;
+    background: linear-gradient(45deg,#f2f3f7 0%, #b3b6bd 100%);
+    border-radius: 15px;
+    font-size: 16px;
+    color: #424a55;
+    cursor: pointer;
+}
+
+.aboutUsTxtBtnSingle.inverse{
+    background: linear-gradient(255deg,#f2f3f7 0%, #b3b6bd 100%);
+}
+
+.sil1{
+    width: 200px;
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.sil2{
+    width: 100px;
+    position: absolute;
+    left: 41%;
+    bottom: 13%;
+    animation: float 3s ease-in-out infinite;
+    z-index: 5;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(-20deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-19deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-20deg);
+  }
+}
+
+.hostSec{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hostBg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+
+.hostSecMain{
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 60px;
+}
+
+.hostSecMain h2{
+    font-size: 40px;
+    color: #424a55;
+    text-align: center;
+}
+
+.hostSecMainWin{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.hostSecMainWinRow{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.hostSecMainWinRowSingle{
+    width: 400px;
+    height: 95%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: scale(0.5);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.hostSecMainWinRowSingle.show{
+    transform: scale(1);
+}
+
+.hostSecMainWinRowSingle img{
+    width: 80px;
+}
+
+.hostSecMainWinRowSingle span{
+    text-align: center;
+    width: 60%;
+    color: #041324;
+    font-family: 'fanavari';
+    font-size: 24px;
+}
+
+.hostSecMainWinRowSingle h3{
+    font-weight: normal;
+    font-size: 24px;
+    font-family: 'fani';
+    color: #424a55;
+    margin-top: 25px;
+}
+
+.hostSecMainWinRowSingle:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sil3{
+    width: 125px;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    animation: float2 3s ease-in-out infinite;
+    z-index: 5;
+}
+
+.sil4{
+    width: 150px;
+    position: absolute;
+    right: 5%;
+    bottom: 7%;
+    animation: float2 3s ease-in-out infinite;
+    z-index: 5;
+}
+
+.sil5{
+    width: 70px;
+    position: absolute;
+    left: 19%;
+    bottom: 31%;
+    animation: float3 3s ease-in-out infinite;
+    z-index: 5;
+    filter: blur(5px);
+}
+
+.sil6{
+    width: 70px;
+    position: absolute;
+    right: 19%;
+    top: 31%;
+    animation: float3 3s ease-in-out infinite;
+    z-index: 5;
+    filter: blur(2px);
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(0px) rotate(-30deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-29deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-30deg);
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.footer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.footebg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
